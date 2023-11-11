@@ -6,6 +6,8 @@
 	"scripts": {
 		"lint": "eslint .",
 		"lint:fix": "npm run lint -- --fix",
+		"release": "standard-version",
+		"commit": "cz",
 		"prepare": "husky install"
 	},
 	"repository": {
@@ -31,8 +33,18 @@
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.37",
+		"@typescript-eslint/eslint-plugin": "^6.10.0",
+		"@typescript-eslint/parser": "^6.10.0",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.53.0",
+		"husky": "^8.0.0",
 		"prettier": "^3.0.3",
-		"husky": "^8.0.0"
+		"standard-version": "^9.5.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
