@@ -1,50 +1,63 @@
 {
-	"name": "@university-ecosystem/ui-kit",
-	"version": "0.0.1",
-	"description": "University ecosystem ui-kit ",
-	"main": "index.js",
-	"scripts": {
-		"lint": "eslint .",
-		"lint:fix": "npm run lint -- --fix",
-		"release": "standard-version",
-		"commit": "cz",
-		"prepare": "husky install"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/university-ecosystem/ui-kit.git"
-	},
-	"keywords": [
-		"Ecosystem",
-		"React",
-		"ui-kit"
-	],
-	"author": "Maksim Dmitriev <sigarachi@yandex.ru>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/university-ecosystem/ui-kit/issues"
-	},
-	"homepage": "https://github.com/university-ecosystem/ui-kit#readme",
-	"dependencies": {
-		"@emotion/react": "^11.11.1",
-		"@emotion/styled": "^11.11.0",
-		"react": "^18.2.0",
-		"typescript": "^5.2.2"
-	},
-	"devDependencies": {
-		"@types/react": "^18.2.37",
-		"@typescript-eslint/eslint-plugin": "^6.10.0",
-		"@typescript-eslint/parser": "^6.10.0",
-		"commitizen": "^4.3.0",
-		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.53.0",
-		"husky": "^8.0.0",
-		"prettier": "^3.0.3",
-		"standard-version": "^9.5.0"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	}
+  "name": "@university-ecosystem/ui-kit",
+  "version": "0.0.1",
+  "description": "University ecosystem ui-kit ",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "release": "standard-version",
+    "commit": "cz",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/university-ecosystem/ui-kit.git"
+  },
+  "keywords": [
+    "Ecosystem",
+    "React",
+    "ui-kit"
+  ],
+  "author": "Maksim Dmitriev <sigarachi@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/university-ecosystem/ui-kit/issues"
+  },
+  "homepage": "https://github.com/university-ecosystem/ui-kit#readme",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.25",
+    "@storybook/addon-essentials": "^8.0.2",
+    "@storybook/addon-interactions": "^8.0.2",
+    "@storybook/addon-links": "^8.0.2",
+    "@storybook/addon-onboarding": "^8.0.2",
+    "@storybook/blocks": "^8.0.2",
+    "@storybook/react": "^8.0.2",
+    "@storybook/react-vite": "^8.0.2",
+    "@storybook/test": "^8.0.2",
+    "@types/react": "^18.2.37",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "standard-version": "^9.5.0",
+    "storybook": "^8.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
