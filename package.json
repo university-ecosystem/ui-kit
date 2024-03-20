@@ -1,6 +1,5 @@
 {
 	"name": "@university-ecosystem/ui-kit",
-	"private": "false",
 	"version": "0.0.1",
 	"description": "University ecosystem ui-kit ",
 	"main": "index.js",
