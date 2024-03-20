@@ -3,6 +3,7 @@
 		"jsx": "react",
 		"target": "ES2015",
 		"module": "commonjs",
+		"allowJs": true,
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
