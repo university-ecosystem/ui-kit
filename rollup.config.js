@@ -6,6 +6,7 @@ import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import url from 'rollup-plugin-url';
 
 import packageJson from './package.json';
 
@@ -28,6 +29,10 @@ export default [
 			peerDepsExternal(),
 			resolve(),
 			commonjs(),
+			url({
+				include: ['**/*.ttf'],
+				limit: Infinity,
+			}),
 			typescript({ tsconfig: './tsconfig.json' }),
 			terser(),
 		],
