@@ -16,6 +16,5 @@
 	},
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Recommended",
-
-	"exclude": ["node_modules", "lib", "**.stories.**"]
+	"exclude": ["node_modules", "lib", "**/*.stories.tsx"]
 }
