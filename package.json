@@ -5,12 +5,13 @@
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
 	"types": "dist/index.d.ts",
+	"typings": "dist/types.d.ts",
 	"files": [
 		"dist/**"
 	],
 	"scripts": {
 		"lint": "eslint .",
-		"rollup": "rollup -c --bundleConfigAsCjs",
+		"build": "rollup -c --bundleConfigAsCjs",
 		"lint:fix": "npm run lint -- --fix",
 		"release": "standard-version",
 		"commit": "cz",
@@ -38,6 +39,9 @@
 		"@emotion/styled": "^11.11.0",
 		"react": "^18.2.0",
 		"typescript": "^5.2.2"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^1.2.25",

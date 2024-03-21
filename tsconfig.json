@@ -15,5 +15,7 @@
 		"skipLibCheck": true
 	},
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"display": "Recommended"
+	"display": "Recommended",
+
+	"exclude": ["node_modules", "lib", "**.stories.**"]
 }
