@@ -52,5 +52,8 @@ export const ecosystemTheme: Theme = {
 			600: '#3a3a40',
 			700: '#1b1b1f',
 		},
+		error: {
+			base: '#eb5757',
+		},
 	},
 };
