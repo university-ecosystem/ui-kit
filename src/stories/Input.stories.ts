@@ -14,7 +14,7 @@ const meta = {
 	tags: ['autodocs'],
 	argTypes: {
 		children: { type: 'string', defaultValue: 'Why is type undefined?' },
-		variant: { type: 'string', defaultValue: 'filled' },
+		variant: { type: 'string', defaultValue: 'large' },
 	},
 	// More on argTypes: https://storybook.js.org/docs/api/argtypes
 	// Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
@@ -29,6 +29,7 @@ export const Large: Story = {
 	args: {
 		variant: 'large',
 		placeholder: 'Large',
+		onChange: (event) => console.log(event),
 	},
 };
 

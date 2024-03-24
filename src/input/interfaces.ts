@@ -4,5 +4,5 @@ export type InputProps = React.ComponentProps<'input'> & {
 	errorText?: string;
 	variant: InputSize;
 	value?: string;
-	onClear?: () => void;
+	onChange?: (value: string | number) => void;
 };

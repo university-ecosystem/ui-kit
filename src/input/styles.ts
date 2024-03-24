@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 import { InputProps } from './interfaces';
 
-export const StyledInputWrapper = styled('div')<InputProps>`
+export const StyledInputWrapper = styled('div')<
+	Pick<InputProps, 'variant' | 'errorText'>
+>`
 	width: ${(props) => {
 		switch (props.variant) {
 			case 'large':
