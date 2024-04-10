@@ -12,7 +12,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
 	return (
 		<ButtonWrapper variant={variant} onClick={onClick} {...rest}>
-			<div>{icon}</div>
+			{icon && <div>{icon}</div>}
 			{!onlyIcon && <div>{children}</div>}
 		</ButtonWrapper>
 	);
