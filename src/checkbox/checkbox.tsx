@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckboxProps } from './interfaces';
 import { StyledCheckbox } from './styles';
+import { Typography } from '../typography';
 
 export const Checkbox: React.FC<CheckboxProps> = ({
 	title,
@@ -20,7 +21,9 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 					onSelect(value);
 				}}
 			/>
-			<label htmlFor={value}>{title}</label>
+			<label htmlFor={value}>
+				<Typography variant="body1">{title}</Typography>
+			</label>
 		</StyledCheckbox>
 	);
 };
