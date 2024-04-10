@@ -1,7 +1,12 @@
 import React, { useCallback, useState } from 'react';
 import { RxCross1 } from 'react-icons/rx';
 import { InputProps } from './interfaces';
-import { ErrorText, StyledInput, StyledInputWrapper } from './styles';
+import {
+	StyledInput,
+	StyledInputContainer,
+	StyledInputWrapper,
+} from './styles';
+import { Typography } from '../typography';
 
 export const Input: React.FC<InputProps> = React.memo(
 	({ variant = 'large', errorText, onChange, ...rest }) => {
@@ -21,13 +26,7 @@ export const Input: React.FC<InputProps> = React.memo(
 		);
 
 		return (
-			<div
-				style={{
-					display: 'flex',
-					flexDirection: 'column',
-					width: 'fit-content',
-					gap: 8,
-				}}>
+			<StyledInputContainer>
 				<StyledInputWrapper variant={variant} errorText={errorText}>
 					<StyledInput
 						value={inputValue}
@@ -38,8 +37,12 @@ export const Input: React.FC<InputProps> = React.memo(
 						<RxCross1 style={{ cursor: 'pointer' }} onClick={onClear} />
 					)}
 				</StyledInputWrapper>
-				{Boolean(errorText) && <ErrorText>{errorText}</ErrorText>}
-			</div>
+				{Boolean(errorText) && (
+					<Typography variant="body1" color="error">
+						{errorText}
+					</Typography>
+				)}
+			</StyledInputContainer>
 		);
 	}
 );

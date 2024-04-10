@@ -3,12 +3,15 @@ import { ButtonProps } from './interfaces';
 
 export const ButtonWrapper = styled('button')<ButtonProps>`
 	border-radius: 12px;
-	width: 350px;
+	width: fit-content;
 
 	padding: 12px;
 
 	cursor: pointer;
 	border: none;
+
+	display: flex;
+	gap: 4px;
 
 	${(props) => {
 		if (props.variant === 'filled')

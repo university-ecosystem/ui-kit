@@ -6,4 +6,6 @@ export const ButtonVariants = {
 
 export type ButtonProps = React.ComponentProps<'button'> & {
 	variant?: keyof typeof ButtonVariants;
+	onlyIcon?: boolean;
+	icon?: React.ReactNode;
 };

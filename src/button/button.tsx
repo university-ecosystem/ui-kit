@@ -4,13 +4,16 @@ import { ButtonProps } from './interfaces';
 
 export const Button: React.FC<ButtonProps> = ({
 	children,
+	icon,
 	variant = 'filled',
+	onlyIcon = false,
 	onClick,
 	...rest
 }) => {
 	return (
 		<ButtonWrapper variant={variant} onClick={onClick} {...rest}>
-			{children}
+			<div>{icon}</div>
+			{!onlyIcon && <div>{children}</div>}
 		</ButtonWrapper>
 	);
 };

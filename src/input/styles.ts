@@ -1,6 +1,13 @@
 import styled from '@emotion/styled';
 import { InputProps } from './interfaces';
 
+export const StyledInputContainer = styled('div')`
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	gap: 8px;
+`;
+
 export const StyledInputWrapper = styled('div')<
 	Pick<InputProps, 'variant' | 'errorText'>
 >`
@@ -59,11 +66,4 @@ export const StyledInput = styled('input')`
 		outline: 0;
 		outline-offset: 0;
 	}
-`;
-
-export const ErrorText = styled('p')`
-	margin: 0;
-	font-size: 14px;
-	padding-left: 12px;
-	color: ${(props) => props.theme.colors.error.base};
 `;
