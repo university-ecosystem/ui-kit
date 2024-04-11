@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/university-ecosystem/ui-kit/compare/v0.1.0...v0.1.1) (2024-04-11)
+
+
+### Bug Fixes
+
+* dropdown select option fix ([f6fe19c](https://github.com/university-ecosystem/ui-kit/commit/f6fe19c377124884b6d46cb1bd3b2807e9f7bc78))
+
 ## [0.1.0](https://github.com/university-ecosystem/ui-kit/compare/v0.0.7...v0.1.0) (2024-04-11)
 
 
