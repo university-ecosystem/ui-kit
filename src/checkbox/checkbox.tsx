@@ -14,14 +14,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 		<StyledCheckbox>
 			<input
 				type="checkbox"
-				name={value}
+				name={String(value)}
 				checked={checked}
 				disabled={disabled}
 				onChange={() => {
 					onSelect(value);
 				}}
 			/>
-			<label htmlFor={value}>
+			<label htmlFor={String(value)}>
 				<Typography variant="body1">{title}</Typography>
 			</label>
 		</StyledCheckbox>

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { Checkbox } from '../checkbox';
+import { Dropdown } from '../dropdown';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-	title: 'Components/Checkbox',
-	component: Checkbox,
+	title: 'Components/Dropdown',
+	component: Dropdown,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: 'centered',
@@ -15,8 +15,18 @@ const meta = {
 	argTypes: {},
 	// More on argTypes: https://storybook.js.org/docs/api/argtypes
 	// Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-	args: { title: 'Test', value: 'test', onSelect: fn() },
-} satisfies Meta<typeof Checkbox>;
+	args: {
+		options: [
+			{ title: 'test1', value: 'test1', id: '1' },
+			{ title: 'test2', value: 'test2', id: '2' },
+		],
+		onSelect: fn(),
+		value: [
+			{ title: 'test1', value: 'test1', id: '1' },
+			{ title: 'test2', value: 'test2', id: '2' },
+		],
+	},
+} satisfies Meta<typeof Dropdown>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -24,9 +34,17 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
 	args: {
-		title: 'test',
-		value: 'test',
-		checked: false,
-		onSelect: fn(),
+		placeholder: 'Выберите одну из опций',
+		options: [
+			{ title: 'test1', value: 'test1', id: '1' },
+			{ title: 'test2', value: 'test2', id: '2' },
+			{ title: 'test3', value: 'test3', id: '3' },
+		],
+		onSelectOption: fn(),
+		value: [
+			// { title: 'test1', value: 'test1', id: '1' },
+			{ title: 'test2', value: 'test2', id: '2' },
+		],
+		multiSelect: false,
 	},
 };

@@ -8,8 +8,18 @@ import {
 } from './styles';
 import { Typography } from '../typography';
 
-export const Input: React.FC<InputProps> = React.memo(
-	({ variant = 'large', errorText, onChange, ...rest }) => {
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+	(
+		{
+			variant = 'large',
+			errorText,
+			rightIcon,
+			disableClearIcon = false,
+			onChange,
+			...rest
+		},
+		ref
+	) => {
 		const [inputValue, setInputValue] = useState<string | number>();
 
 		const onClear = useCallback(() => {
@@ -29,11 +39,13 @@ export const Input: React.FC<InputProps> = React.memo(
 			<StyledInputContainer>
 				<StyledInputWrapper variant={variant} errorText={errorText}>
 					<StyledInput
+						ref={ref}
 						value={inputValue}
 						onChange={onChangeHandler}
 						{...rest}
 					/>
-					{Boolean(inputValue) && (
+					{Boolean(rightIcon) && <>{rightIcon}</>}
+					{Boolean(inputValue && !disableClearIcon) && (
 						<RxCross1 style={{ cursor: 'pointer' }} onClick={onClear} />
 					)}
 				</StyledInputWrapper>
