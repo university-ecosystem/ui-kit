@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/university-ecosystem/ui-kit/compare/v0.0.7...v0.1.0) (2024-04-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* onClear was deleted
+
+### Features
+
+* badge done ([fdf15dc](https://github.com/university-ecosystem/ui-kit/commit/fdf15dc5fa985edb953f4d0a03e1a50ad657fba6))
+* checkbox done ([884bf7c](https://github.com/university-ecosystem/ui-kit/commit/884bf7c9998f591e81203abdf7c5eda45ac77531))
+* dropdown done ([c8844e8](https://github.com/university-ecosystem/ui-kit/commit/c8844e87b9a59f7e1c568b79256e0ac564e2dc0c))
+* **typography:** typography component is done ([69a6404](https://github.com/university-ecosystem/ui-kit/commit/69a640402166836f07f135f6cad2f3fd36ae9f44))
+
+
+### Bug Fixes
+
+* checkbox fix ([ba003ca](https://github.com/university-ecosystem/ui-kit/commit/ba003cab72cc386f096d92f08b11e7e035a23842))
+* fix onChange event ([5ba5527](https://github.com/university-ecosystem/ui-kit/commit/5ba55279cfb391ddd10100b5690b3fac1320c4e4))
+
 ### [0.0.7](https://github.com/university-ecosystem/ui-kit/compare/v0.0.6...v0.0.7) (2024-03-21)
 
 
