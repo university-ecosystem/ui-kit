@@ -4,3 +4,4 @@ export * from './input';
 export * from './typography';
 export * from './checkbox';
 export * from './badge';
+export * from './dropdown';

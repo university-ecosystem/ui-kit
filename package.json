@@ -1,6 +1,6 @@
 {
 	"name": "@university-ecosystem/ui-kit",
-	"version": "0.0.7",
+	"version": "0.1.5",
 	"description": "University ecosystem ui-kit ",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -38,6 +38,7 @@
 		"@emotion/react": "^11.11.1",
 		"@emotion/styled": "^11.11.0",
 		"react": "^18.2.0",
+		"react-click-away-listener": "2.2.3",
 		"react-icons": "5.0.1",
 		"typescript": "^5.2.2"
 	},

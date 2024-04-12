@@ -7,5 +7,5 @@ export interface SelectProps extends OmitedInput {
 	value: Array<Option>;
 	options: Array<Option>;
 	multiSelect?: boolean;
-	onSelectOption: (value: Option | Array<Option>) => void;
+	onSelectOption: (value: Array<Option>) => void;
 }
