@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/university-ecosystem/ui-kit/compare/v0.1.2...v0.1.3) (2024-04-12)
+
+
+### Bug Fixes
+
+* dropdown option position fix ([5407f84](https://github.com/university-ecosystem/ui-kit/commit/5407f842cc5635d682dbeed6f384cfd295354bad))
+
 ### [0.1.2](https://github.com/university-ecosystem/ui-kit/compare/v0.1.1...v0.1.2) (2024-04-12)
 
 
