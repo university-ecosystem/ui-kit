@@ -5,10 +5,15 @@ export const StyledSelectWrapper = styled('div')`
 	flex-direction: column;
 
 	gap: 8px;
+
+	input {
+		cursor: pointer;
+	}
 `;
 
 export const StyledOptionsWrapper = styled('div')`
 	height: 100px;
+	width: 100%;
 
 	overflow: auto;
 
