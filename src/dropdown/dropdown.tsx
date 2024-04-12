@@ -35,18 +35,23 @@ export const Dropdown: React.FC<SelectProps> = ({
 
 	const handleSelect = useCallback((option: Option, checked: boolean) => {
 		if (multiSelect) {
+			let newValues = [];
+
 			if (checked) {
-				setValues((prev) => [...prev, option]);
+				newValues = [...values, option];
+				setValues(newValues);
 			} else {
-				setValues((prev) => prev.filter((item) => item.id !== option.id));
+				newValues = values.filter((item) => item.id !== option.id);
+				setValues(newValues);
 			}
 
-			onSelectOption(values);
+			onSelectOption(newValues);
 		} else {
 			if (checked) {
-				setValues(() => [option]);
+				const newValues = [option];
+				setValues(newValues);
 
-				onSelectOption(values);
+				onSelectOption(newValues);
 			} else {
 				setValues([]);
 				onSelectOption([]);
