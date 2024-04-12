@@ -1,4 +1,10 @@
-import React, { useCallback, useMemo, useRef, useState } from 'react';
+import React, {
+	useCallback,
+	useEffect,
+	useMemo,
+	useRef,
+	useState,
+} from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import { SelectProps } from './interfaces';
 import { StyledOptionsWrapper, StyledSelectWrapper } from './styles';
@@ -11,12 +17,12 @@ import ClickAwayListener from 'react-click-away-listener';
 export const Dropdown: React.FC<SelectProps> = ({
 	value,
 	options,
-	multiSelect = false,
+	multiSelect,
 	onSelectOption,
 	...rest
 }): React.ReactElement => {
 	const [isOpened, setIsOpened] = useState<boolean>(false);
-	const [values, setValues] = useState<Array<Option>>(value);
+	const [values, setValues] = useState<Array<Option>>([]);
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	const inputFieldValue = useMemo(() => {
@@ -33,31 +39,38 @@ export const Dropdown: React.FC<SelectProps> = ({
 		return str;
 	}, [values]);
 
-	const handleSelect = useCallback((option: Option, checked: boolean) => {
-		if (multiSelect) {
-			let newValues = [];
+	useEffect(() => {
+		setValues(value);
+	}, []);
 
-			if (checked) {
-				newValues = [...values, option];
-				setValues(newValues);
-			} else {
-				newValues = values.filter((item) => item.id !== option.id);
-				setValues(newValues);
-			}
+	const handleSelect = useCallback(
+		(option: Option, checked: boolean) => {
+			if (multiSelect) {
+				let newValues = [];
 
-			onSelectOption(newValues);
-		} else {
-			if (checked) {
-				const newValues = [option];
-				setValues(newValues);
+				if (checked) {
+					newValues = [...values, option];
+					setValues(newValues);
+				} else {
+					newValues = values.filter((item) => item.id !== option.id);
+					setValues(newValues);
+				}
 
 				onSelectOption(newValues);
 			} else {
-				setValues([]);
-				onSelectOption([]);
+				if (checked) {
+					const newValues = [option];
+					setValues(newValues);
+
+					onSelectOption(newValues);
+				} else {
+					setValues([]);
+					onSelectOption([]);
+				}
 			}
-		}
-	}, []);
+		},
+		[values, multiSelect]
+	);
 
 	const handleClickAway = () => {
 		setIsOpened(false);
