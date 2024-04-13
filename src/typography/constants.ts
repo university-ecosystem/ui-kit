@@ -6,5 +6,6 @@ export const ColorMap = {
 	[TypographyColors.error]: ecosystemTheme.colors.error['base'],
 	[TypographyColors.primary]: ecosystemTheme.colors.primary['600'],
 	[TypographyColors.secondary]: ecosystemTheme.colors.secondary['600'],
+	[TypographyColors.description]: ecosystemTheme.colors.grey['300'],
 	[TypographyColors.inherit]: 'inherit',
 };

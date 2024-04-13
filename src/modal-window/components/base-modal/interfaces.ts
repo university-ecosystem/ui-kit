@@ -1,5 +1,5 @@
 export interface BaseModalProps {
 	isOpen: boolean;
 	onClose: () => void;
-	children: React.ReactElement;
+	children: React.ReactElement | React.ReactNode;
 }

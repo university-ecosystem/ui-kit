@@ -1,6 +1,12 @@
 import React from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { BaseModalProps } from './interfaces';
+import {
+	BaseModalBackdrop,
+	BaseModalContainer,
+	BaseModalWrapper,
+} from './styles';
+import { Portal } from '../../../portal';
 
 export const BaseModal: React.FC<BaseModalProps> = ({
 	isOpen,
@@ -10,6 +16,13 @@ export const BaseModal: React.FC<BaseModalProps> = ({
 	if (!isOpen) return <></>;
 
 	return (
-		<ClickAwayListener onClickAway={onClose}>{children}</ClickAwayListener>
+		<Portal>
+			<BaseModalContainer>
+				<BaseModalBackdrop />
+				<ClickAwayListener onClickAway={onClose}>
+					<BaseModalWrapper>{children}</BaseModalWrapper>
+				</ClickAwayListener>
+			</BaseModalContainer>
+		</Portal>
 	);
 };

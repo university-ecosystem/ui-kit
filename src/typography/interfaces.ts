@@ -14,6 +14,7 @@ export const TypographyColors = {
 	primary: 'primary',
 	secondary: 'secondary',
 	base: 'base',
+	description: 'description',
 	inherit: 'inherit',
 };
 

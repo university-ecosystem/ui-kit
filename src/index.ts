@@ -5,3 +5,5 @@ export * from './typography';
 export * from './checkbox';
 export * from './badge';
 export * from './dropdown';
+export * from './portal';
+export * from './modal-window';

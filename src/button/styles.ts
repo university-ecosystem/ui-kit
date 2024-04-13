@@ -3,14 +3,16 @@ import { ButtonProps } from './interfaces';
 
 export const ButtonWrapper = styled('button')<ButtonProps>`
 	border-radius: 12px;
-	width: fit-content;
 
 	padding: 12px;
+	height: fit-content;
 
 	cursor: pointer;
 	border: none;
 
 	display: flex;
+
+	justify-content: center;
 	gap: 4px;
 
 	${(props) => {
