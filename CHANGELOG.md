@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/university-ecosystem/ui-kit/compare/v0.2.0...v0.2.1) (2024-04-13)
+
+
+### Features
+
+* new badge props, dropdown is now working with badges ([34253f0](https://github.com/university-ecosystem/ui-kit/commit/34253f0e42c23e4632f4b3a748ae70b7a47dee75))
+
 ## [0.2.0](https://github.com/university-ecosystem/ui-kit/compare/v0.1.5...v0.2.0) (2024-04-13)
 
 
