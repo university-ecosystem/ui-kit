@@ -39,6 +39,7 @@ export const Primary: Story = {
 			{ title: 'test1', value: 'test1', id: '1' },
 			{ title: 'test2', value: 'test2', id: '2' },
 			{ title: 'test3', value: 'test3', id: '3' },
+			{ title: 'test4', value: 'test4', id: '4' },
 		],
 		onSelectOption: fn(),
 		value: [

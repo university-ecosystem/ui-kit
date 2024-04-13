@@ -1,24 +1,26 @@
 import styled from '@emotion/styled';
-import { BadgeProps } from './interfaces';
+import { BadgeColorValues, BadgeProps } from './interfaces';
 
-export const BadgeWrapper = styled('div')<Pick<BadgeProps, 'variant'>>`
+export const BadgeWrapper = styled('div')<
+	Pick<BadgeProps, 'variant'> & { badgeColor: BadgeColorValues }
+>`
 	display: flex;
 	width: fit-content;
 	gap: 8px;
 
-	padding: 10px;
-	border-radius: 18px;
+	padding: 5px 10px;
+	border-radius: 8px;
 
 	cursor: pointer;
 
 	${(props) => {
 		if (props.variant === 'filled')
 			return `
-				background-color: ${props.theme.colors.primary.base};
+				background-color: ${props.badgeColor.base};
 				color: white;
 
 				:hover {
-					background-color: ${props.theme.colors.secondary[300]};
+					background-color: ${props.badgeColor.hover};
 					transition: .2s;
 				}
 			`;
@@ -26,12 +28,12 @@ export const BadgeWrapper = styled('div')<Pick<BadgeProps, 'variant'>>`
 		if (props.variant === 'outlined')
 			return `
 				background-color: inherit;
-				border: 1px solid  ${props.theme.colors.primary.base};
-				color: ${props.theme.colors.primary.base};
+				border: 1px solid  ${props.badgeColor.base};
+				color: ${props.badgeColor.base};
 
 				:hover {
 					color: white;
-					background-color: ${props.theme.colors.secondary[300]};
+					background-color: ${props.badgeColor.hover};
 					transition: .2s;
 				}
 			`;
