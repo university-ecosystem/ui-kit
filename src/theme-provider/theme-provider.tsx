@@ -1,8 +1,8 @@
 import React from 'react';
 import {
+	css,
 	Global,
 	ThemeProvider as NativeThemeProvider,
-	css,
 } from '@emotion/react';
 import { ecosystemTheme } from './constants';
 import RalewayRegular from '../font/Raleway-Regular.ttf';

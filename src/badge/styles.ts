@@ -6,8 +6,8 @@ export const BadgeWrapper = styled('div')<Pick<BadgeProps, 'variant'>>`
 	width: fit-content;
 	gap: 8px;
 
-	padding: 14px;
-	border-radius: 12px;
+	padding: 10px;
+	border-radius: 18px;
 
 	cursor: pointer;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BadgeProps } from './interfaces';
 import { BadgeWrapper } from './styles';
+import { Typography } from '../typography';
 
 export const Badge: React.FC<BadgeProps> = ({
 	rightIcon,
@@ -12,7 +13,9 @@ export const Badge: React.FC<BadgeProps> = ({
 	return (
 		<BadgeWrapper variant={variant} onClick={onClick}>
 			{leftIcon}
-			{text}
+			<Typography variant="body1" color="inherit">
+				{text}
+			</Typography>
 			{rightIcon}
 		</BadgeWrapper>
 	);

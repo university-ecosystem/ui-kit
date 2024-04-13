@@ -6,11 +6,11 @@ import React, {
 	useState,
 } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
+import ClickAwayListener from 'react-click-away-listener';
 import { SelectProps } from './interfaces';
 import { StyledOptionsWrapper, StyledSelectWrapper } from './styles';
-import { Input } from '../input';
 import { DropdownOption, Option } from './components';
-import ClickAwayListener from 'react-click-away-listener';
+import { Input } from '../input';
 
 //!! NEEDS WORK
 
