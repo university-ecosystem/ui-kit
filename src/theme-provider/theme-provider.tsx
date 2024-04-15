@@ -3,14 +3,16 @@ import {
 	css,
 	Global,
 	ThemeProvider as NativeThemeProvider,
+	Theme,
 } from '@emotion/react';
 import { ecosystemTheme } from './constants';
 import RalewayRegular from '../font/Raleway-Regular.ttf';
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
-	children,
-}) => (
-	<NativeThemeProvider theme={ecosystemTheme}>
+export const ThemeProvider: React.FC<{
+	children: React.ReactNode;
+	theme?: Theme;
+}> = ({ children, theme }) => (
+	<NativeThemeProvider theme={theme ?? ecosystemTheme}>
 		<Global
 			styles={css`
 				@font-face {

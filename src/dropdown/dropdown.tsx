@@ -62,6 +62,7 @@ export const Dropdown: React.FC<SelectProps> = ({
 					<BadgeInput
 						placeholder={placeholder}
 						value={values}
+						variant="large"
 						onClick={() => {
 							setIsOpened((prev) => !prev);
 						}}

@@ -26,7 +26,13 @@ export const StyledInputWrapper = styled('div')<
 	}};
 	padding: 12px;
 
-	min-height: 30px;
+	${(props) => {
+		if (props.variant === 'large') {
+			return `min-height: 30px;`;
+		}
+
+		return ``;
+	}}
 
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
 	border-radius: 8px;
