@@ -10,6 +10,8 @@ export const StyledNavigationWrapper = styled('div')`
 	margin: 0;
 
 	padding: 12px;
+
+	border-right: 0.5px solid ${(props) => props.theme.colors.grey[200]};
 `;
 
 export const StyledLogoWrapper = styled('div')`
@@ -20,6 +22,20 @@ export const StyledLogoWrapper = styled('div')`
 	padding-bottom: 12px;
 
 	cursor: pointer;
+
+	//eslint-ignore
+	/* prettier-ignore */
+	@media only screen and 
+	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
+		font-size-adjust: 60%;
+	}
+
+	//eslint-ignore
+	/* prettier-ignore */
+	@media only screen and 
+	(max-width: ${(props) => props.theme.breakPoints.tablet}) {
+		font-size-adjust: 80%;
+	}
 `;
 
 export const StyledOptionsWrapper = styled('div')`

@@ -10,5 +10,11 @@ declare module '@emotion/react' {
 			grey: Record<string | number, string>;
 			error: Record<string | number, string>;
 		};
+		breakPoints: {
+			mobile: string;
+			tablet: string;
+			laptop: string;
+			desktop: string;
+		};
 	}
 }

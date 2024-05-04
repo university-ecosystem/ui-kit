@@ -13,6 +13,14 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 
 	cursor: pointer;
 
+	//eslint-ignore
+	/* prettier-ignore */
+	@media only screen and 
+	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
+		width: fit-content;
+		font-size: 0;
+	}
+
 	${(props) => {
 		if (props.selected) {
 			return `
@@ -20,7 +28,6 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
                 color: white;
             `;
 		}
-
 		return '';
 	}}
 `;
