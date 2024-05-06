@@ -27,14 +27,14 @@ export const StyledLogoWrapper = styled('div')`
 	/* prettier-ignore */
 	@media only screen and 
 	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
-		font-size-adjust: 60%;
+		font-size-adjust: 60% !important;
 	}
 
 	//eslint-ignore
 	/* prettier-ignore */
 	@media only screen and 
 	(max-width: ${(props) => props.theme.breakPoints.tablet}) {
-		font-size-adjust: 80%;
+		font-size-adjust: 80% !important;
 	}
 `;
 

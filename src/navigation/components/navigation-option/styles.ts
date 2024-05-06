@@ -18,7 +18,9 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	@media only screen and 
 	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
 		width: fit-content;
-		font-size: 0;
+		& > p,h1,h2,h3,h4,h5,h6 {
+			display: none;
+		}
 	}
 
 	${(props) => {
