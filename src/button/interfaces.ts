@@ -4,8 +4,16 @@ export const ButtonVariants = {
 	text: 'text',
 };
 
+export const ButtonSize = {
+	fullWidth: 'fullWidth',
+	large: 'large',
+	default: 'default',
+	small: 'small',
+};
+
 export type ButtonProps = React.ComponentProps<'button'> & {
 	variant?: keyof typeof ButtonVariants;
 	onlyIcon?: boolean;
 	icon?: React.ReactNode;
+	size?: keyof typeof ButtonSize;
 };

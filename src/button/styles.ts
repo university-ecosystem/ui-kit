@@ -16,6 +16,22 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 	gap: 4px;
 
 	${(props) => {
+		if (props.size === 'default') {
+			return `width: 250px;`;
+		}
+
+		if (props.size === 'small') {
+			return `width: 100px;`;
+		}
+
+		if (props.size === 'large') {
+			return `width: 350px;`;
+		}
+
+		return ``;
+	}}
+
+	${(props) => {
 		if (props.variant === 'filled')
 			return `
 				background-color: ${props.theme.colors.primary.base};
