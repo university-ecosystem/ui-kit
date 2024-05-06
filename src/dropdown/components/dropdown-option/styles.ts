@@ -26,5 +26,5 @@ export const StyledDropdownOptionContent = styled('div')`
 	flex-direction: row;
 	align-items: center;
 	padding-bottom: 12px;
-	border-bottom: 1px solid ${(props) => props.theme.colors.grey[200]};
+	border-bottom: 0.5px solid ${(props) => props.theme.colors.grey[200]};
 `;

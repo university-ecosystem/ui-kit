@@ -1,16 +1,10 @@
-import React, {
-	useCallback,
-	useEffect,
-	useMemo,
-	useRef,
-	useState,
-} from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
+import React, { useCallback, useEffect, useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
+import { IoIosArrowDown } from 'react-icons/io';
 import { SelectProps } from './interfaces';
 import { StyledOptionsWrapper, StyledSelectWrapper } from './styles';
 import { DropdownOption, Option } from './components';
-import { Input } from '../input';
+import { BadgeInput } from '../input';
 
 //!! NEEDS WORK
 
@@ -18,26 +12,11 @@ export const Dropdown: React.FC<SelectProps> = ({
 	value,
 	options,
 	multiSelect,
+	placeholder,
 	onSelectOption,
-	...rest
 }): React.ReactElement => {
 	const [isOpened, setIsOpened] = useState<boolean>(false);
 	const [values, setValues] = useState<Array<Option>>([]);
-	const inputRef = useRef<HTMLInputElement>(null);
-
-	const inputFieldValue = useMemo(() => {
-		let str = '';
-
-		values.forEach((item) => {
-			if (str.length) {
-				str += ',';
-			}
-
-			return (str += item.title);
-		});
-
-		return str;
-	}, [values]);
 
 	useEffect(() => {
 		setValues(value);
@@ -80,20 +59,18 @@ export const Dropdown: React.FC<SelectProps> = ({
 		<ClickAwayListener onClickAway={handleClickAway}>
 			<StyledSelectWrapper>
 				<>
-					<Input
-						{...rest}
-						readOnly
-						autoFocus={isOpened}
-						value={inputFieldValue}
-						disableClearIcon
+					<BadgeInput
+						placeholder={placeholder}
+						value={values}
+						variant="large"
 						onClick={() => {
 							setIsOpened((prev) => !prev);
 						}}
-						ref={inputRef}
-						rightIcon={
+						icon={
 							<IoIosArrowDown
 								cursor="pointer"
-								onClick={() => {
+								onClick={(event) => {
+									event.stopPropagation();
 									setIsOpened((prev) => !prev);
 								}}
 								transform={isOpened ? 'rotate(180)' : ''}

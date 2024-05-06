@@ -56,4 +56,10 @@ export const ecosystemTheme: Theme = {
 			base: '#eb5757',
 		},
 	},
+	breakPoints: {
+		mobile: '40em',
+		tablet: '48em',
+		laptop: '64em',
+		desktop: '80em',
+	},
 };

@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/university-ecosystem/ui-kit/compare/v0.2.2...v0.2.3) (2024-04-16)
+
+
+### Features
+
+* layout ([9fc2463](https://github.com/university-ecosystem/ui-kit/commit/9fc24639bc6c05847652c2e2ab92385e52881faa))
+
+
+### Bug Fixes
+
+* build fix again ([8811b40](https://github.com/university-ecosystem/ui-kit/commit/8811b40a8810a97000117e10c45fb2879220b6db))
+
+### [0.2.2](https://github.com/university-ecosystem/ui-kit/compare/v0.2.1...v0.2.2) (2024-04-15)
+
+
+### Features
+
+* added navigation ([0deecbf](https://github.com/university-ecosystem/ui-kit/commit/0deecbfe2b9ab8a02a8cba1166274f501967d673))
+
+### [0.2.1](https://github.com/university-ecosystem/ui-kit/compare/v0.2.0...v0.2.1) (2024-04-13)
+
+
+### Features
+
+* new badge props, dropdown is now working with badges ([34253f0](https://github.com/university-ecosystem/ui-kit/commit/34253f0e42c23e4632f4b3a748ae70b7a47dee75))
+
+## [0.2.0](https://github.com/university-ecosystem/ui-kit/compare/v0.1.5...v0.2.0) (2024-04-13)
+
+
+### Features
+
+* modalWindow component is done ([35aa483](https://github.com/university-ecosystem/ui-kit/commit/35aa4832ea5eee2adc1bda2e6e87fa0432eb900d))
+
 ### [0.1.5](https://github.com/university-ecosystem/ui-kit/compare/v0.1.4...v0.1.5) (2024-04-12)
 
 
