@@ -9,6 +9,7 @@ export const ButtonSize = {
 	large: 'large',
 	default: 'default',
 	small: 'small',
+	inherit: 'inherit',
 };
 
 export type ButtonProps = React.ComponentProps<'button'> & {

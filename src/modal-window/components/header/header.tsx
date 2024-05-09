@@ -24,6 +24,7 @@ export const Header: React.FC<HeaderProps> = ({
 				<Button
 					onlyIcon
 					variant="text"
+					size="inherit"
 					icon={<RxCross1 />}
 					onClick={onClose}></Button>
 			</StyledModalHeader>

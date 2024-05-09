@@ -28,6 +28,10 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 			return `width: 350px;`;
 		}
 
+		if (props.size === 'fullWidth') {
+			return `width: 100%;`;
+		}
+
 		return ``;
 	}}
 
