@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import { Navigation } from '../navigation';
-import { LayoutFullWindow } from '../layout';
+import { LayoutFullWindow, PageLayout } from '../layout';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -38,7 +38,10 @@ export const Primary: Story = {
 			<div style={{ width: '1000px' }}>
 				<LayoutFullWindow>
 					<Navigation {...args} />
-					<div>content</div>
+					<PageLayout>
+						<PageLayout.Header title="Text" />
+						<PageLayout.Content>content</PageLayout.Content>
+					</PageLayout>
 				</LayoutFullWindow>
 			</div>
 		);
