@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.4](https://github.com/university-ecosystem/ui-kit/compare/v0.3.3...v0.3.4) (2024-05-10)
+
+
+### Bug Fixes
+
+* border bottom for nav logo removed ([606bd8f](https://github.com/university-ecosystem/ui-kit/commit/606bd8f412a04fd758059c7ab17df64ebaea3be2))
+
 ### [0.3.3](https://github.com/university-ecosystem/ui-kit/compare/v0.3.2...v0.3.3) (2024-05-10)
 
 
