@@ -9,7 +9,7 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	background-color: transparent;
 	color: ${(props) => props.theme.colors.grey[700]};
 
-	border-radius: 12px;
+	border-left: 3px solid;
 
 	cursor: pointer;
 
@@ -18,7 +18,7 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	@media only screen and 
 	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
 		width: fit-content;
-		& > p,h1,h2,h3,h4,h5,h6 {
+		p,h1,h2,h3,h4,h5,h6 {
 			display: none;
 		}
 	}
@@ -26,8 +26,9 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	${(props) => {
 		if (props.selected) {
 			return `
-                background-color: ${props.theme.colors.primary.base};
-                color: white;
+				border-color: ${props.theme.colors.primary.base};
+                color: ${props.theme.colors.primary.base};
+				font-weight: 600;
             `;
 		}
 		return '';

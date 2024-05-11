@@ -9,7 +9,7 @@ export const StyledNavigationWrapper = styled('div')`
 	gap: 12px;
 	margin: 0;
 
-	padding: 12px;
+	padding-top: 12px;
 
 	border-right: 0.5px solid ${(props) => props.theme.colors.grey[200]};
 `;
