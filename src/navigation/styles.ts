@@ -11,7 +11,7 @@ export const StyledNavigationWrapper = styled('div')`
 
 	padding-top: 12px;
 
-	border-right: 0.5px solid ${(props) => props.theme.colors.grey[200]};
+	border-right: 1px solid ${(props) => props.theme.colors.grey[100]};
 `;
 
 export const StyledLogoWrapper = styled('div')`
