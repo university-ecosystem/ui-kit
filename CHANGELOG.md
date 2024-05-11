@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/university-ecosystem/ui-kit/compare/v0.3.5...v0.3.6) (2024-05-11)
+
+
+### Features
+
+* avatar component ([251ecf2](https://github.com/university-ecosystem/ui-kit/commit/251ecf2518957fa9ec976d03a8890128e92ba911))
+
 ### [0.3.5](https://github.com/university-ecosystem/ui-kit/compare/v0.3.4...v0.3.5) (2024-05-11)
 
 
