@@ -9,8 +9,6 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	background-color: transparent;
 	color: ${(props) => props.theme.colors.grey[700]};
 
-	border-left: 3px solid;
-
 	cursor: pointer;
 
 	//eslint-ignore
@@ -26,6 +24,7 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	${(props) => {
 		if (props.selected) {
 			return `
+				border-left: 3px solid;
 				border-color: ${props.theme.colors.primary.base};
                 color: ${props.theme.colors.primary.base};
 				font-weight: 600;
