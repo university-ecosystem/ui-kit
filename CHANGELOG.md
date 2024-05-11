@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.7](https://github.com/university-ecosystem/ui-kit/compare/v0.3.6...v0.3.7) (2024-05-11)
+
+
+### Bug Fixes
+
+* nav option border fix ([69a4a23](https://github.com/university-ecosystem/ui-kit/commit/69a4a233a8805775208139092d709796677b221a))
+
 ### [0.3.6](https://github.com/university-ecosystem/ui-kit/compare/v0.3.5...v0.3.6) (2024-05-11)
 
 
