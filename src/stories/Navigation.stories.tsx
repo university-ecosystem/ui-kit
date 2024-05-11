@@ -6,6 +6,7 @@ import { Navigation } from '../navigation';
 import { LayoutFullWindow, PageLayout } from '../layout';
 import { Typography } from '../typography';
 import { Menu } from '../menu';
+import { Avatar } from '../avatar';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -51,7 +52,20 @@ export const Primary: Story = {
 									{ title: 'Title', onSelect: fn() },
 									{ title: 'Title', onSelect: fn() },
 								]}>
-								Menu
+								<div
+									style={{
+										display: 'flex',
+										width: '100%',
+										alignItems: 'center',
+									}}>
+									<Avatar
+										img="https://acropora.ru/images/yootheme/pages/features/panel03.jpg"
+										placeholder="avatar"
+									/>
+									<div style={{ width: '100%', height: '100%' }}>
+										<Typography variant="body1">Максим Дмитриев</Typography>
+									</div>
+								</div>
 							</Menu>
 						}
 					/>
