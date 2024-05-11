@@ -11,6 +11,8 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 
 	cursor: pointer;
 
+	border-left: 3px solid transparent;
+
 	//eslint-ignore
 	/* prettier-ignore */
 	@media only screen and 
@@ -24,7 +26,7 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	${(props) => {
 		if (props.selected) {
 			return `
-				border-left: 3px solid;
+				
 				border-color: ${props.theme.colors.primary.base};
                 color: ${props.theme.colors.primary.base};
 				font-weight: 600;

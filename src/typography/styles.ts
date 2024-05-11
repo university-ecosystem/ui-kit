@@ -59,14 +59,14 @@ export const TypographyWrapper = styled('div')<
 			if (props.variant === 'body1') {
 				return `
 					font-size: clamp(0.8125rem, 0.5781rem + 0.75vw, 1rem);
-                    font-weight: 300;
+                    font-weight: ${props.bold ? '600' : '300'}};
                 `;
 			}
 
 			if (props.variant === 'body2') {
 				return `
 					font-size: clamp(0.625rem, 0.3906rem + 0.75vw, 0.8125rem);
-                    font-weight: 300;
+                    font-weight: ${props.bold ? '600' : '300'}};
                 `;
 			}
 		}}

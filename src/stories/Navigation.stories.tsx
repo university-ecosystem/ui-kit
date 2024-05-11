@@ -37,6 +37,7 @@ export const Primary: Story = {
 		logo: <Typography variant="h3">Logo</Typography>,
 		options: [
 			{ text: 'Home', link: '/home', selected: true, icon: <BiHome /> },
+			{ text: 'Home', link: '/home', selected: false, icon: <BiHome /> },
 		],
 	},
 	render: (args) => {
@@ -63,7 +64,9 @@ export const Primary: Story = {
 										placeholder="avatar"
 									/>
 									<div style={{ width: '100%', height: '100%' }}>
-										<Typography variant="body1">Максим Дмитриев</Typography>
+										<Typography variant="body1" bold>
+											Максим Дмитриев
+										</Typography>
 									</div>
 								</div>
 							</Menu>

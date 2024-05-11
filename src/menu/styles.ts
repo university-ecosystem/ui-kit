@@ -17,6 +17,8 @@ export const MenuChildrenWrapper = styled('div')`
 
 	border-radius: 12px;
 
+	border: 2px solid ${(props) => props.theme.colors.grey['200']};
+
 	:hover {
 		background-color: ${(props) => props.theme.colors.grey['200']};
 		transition: 0.2s ease-in-out;
