@@ -15,11 +15,11 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 
 	//eslint-ignore
 	/* prettier-ignore */
-	@media only screen and 
-	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
+	@media screen and (max-width: ${(props) => props.theme.breakPoints.mobile}) {
 		width: fit-content;
-		p,h1,h2,h3,h4,h5,h6 {
+		p, h1, h2, h3, h4, h5, h6 {
 			display: none;
+			color: white;
 		}
 	}
 

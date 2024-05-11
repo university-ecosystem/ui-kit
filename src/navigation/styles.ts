@@ -15,11 +15,15 @@ export const StyledNavigationWrapper = styled('div')`
 `;
 
 export const StyledLogoWrapper = styled('div')`
-	width: 100%;
+	/* /width: 100%; */
 
 	padding-bottom: 12px;
 
 	cursor: pointer;
+
+	@media screen and (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+		width: fit-content;
+	}
 `;
 
 export const StyledOptionsWrapper = styled('div')`
