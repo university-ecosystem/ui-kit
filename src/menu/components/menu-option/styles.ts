@@ -9,6 +9,8 @@ export const MenuOptionWrapper = styled('li')`
 
 	cursor: pointer;
 
+	gap: 8px;
+
 	:hover {
 		background-color: ${(props) => props.theme.colors.grey['100']};
 	}
