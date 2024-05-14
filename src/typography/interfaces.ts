@@ -22,4 +22,5 @@ export interface TypographyProps {
 	variant: keyof typeof TypographyVariants;
 	color?: keyof typeof TypographyColors;
 	children: React.ReactNode;
+	bold?: boolean;
 }

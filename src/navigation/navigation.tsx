@@ -5,12 +5,13 @@ import {
 	StyledOptionsWrapper,
 } from './styles';
 import { NavigationProps } from './interfaces';
-import { NavigationOption } from './components';
+import { NavigationFooter, NavigationOption } from './components';
 
 export const Navigation: React.FC<NavigationProps> = ({
 	logo,
 	options,
 	onSelectOption,
+	footer,
 }): React.ReactElement => {
 	return (
 		<StyledNavigationWrapper>
@@ -20,6 +21,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 					return <NavigationOption {...option} onSelect={onSelectOption} />;
 				})}
 			</StyledOptionsWrapper>
+			{Boolean(footer) && <NavigationFooter>{footer}</NavigationFooter>}
 		</StyledNavigationWrapper>
 	);
 };

@@ -1,50 +1,54 @@
 import styled from '@emotion/styled';
 
 export const StyledNavigationWrapper = styled('div')`
-	height: 100%;
+	width: 100%;
+
+	height: fit-content;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 
-	gap: 12px;
+	align-items: center;
+
+	position: sticky;
+	top: 0;
+
+	-webkit-box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+
+	padding: 0 12px;
+
+	border-radius: 12px;
+
+	z-index: 10000;
+
+	gap: 24px;
 	margin: 0;
 
-	padding: 12px;
-
-	border-right: 0.5px solid ${(props) => props.theme.colors.grey[200]};
+	@media screen and (min-width: ${(props) => props.theme.breakPoints.laptop}) {
+		margin: 1em;
+		margin-bottom: 0;
+	}
 `;
 
 export const StyledLogoWrapper = styled('div')`
-	width: 100%;
-
-	border-bottom: 0.5px solid ${(props) => props.theme.colors.grey[200]};
-
-	padding-bottom: 12px;
+	height: fit-content;
 
 	cursor: pointer;
 
-	//eslint-ignore
-	/* prettier-ignore */
-	@media only screen and 
-	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
-		font-size-adjust: 60%;
-	}
-
-	//eslint-ignore
-	/* prettier-ignore */
-	@media only screen and 
-	(max-width: ${(props) => props.theme.breakPoints.tablet}) {
-		font-size-adjust: 80%;
+	@media screen and (max-width: ${(props) => props.theme.breakPoints.mobile}) {
+		width: fit-content;
 	}
 `;
 
 export const StyledOptionsWrapper = styled('div')`
-	width: 100%;
+	height: fit-content;
 	flex-grow: 1;
 
 	display: flex;
 
-	flex-direction: column;
+	flex-direction: row;
 
 	gap: 5px;
 `;

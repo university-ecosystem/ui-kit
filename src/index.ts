@@ -11,3 +11,5 @@ export * from './navigation';
 export * from './layout';
 export * from './card';
 export * from './hoverable';
+export * from './menu';
+export * from './avatar';

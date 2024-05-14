@@ -1,8 +1,12 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
+import { BiHome } from 'react-icons/bi';
 import { Navigation } from '../navigation';
-import { LayoutFullWindow } from '../layout';
+import { LayoutFullWindow, PageLayout } from '../layout';
+import { Typography } from '../typography';
+import { Menu } from '../menu';
+import { Avatar } from '../avatar';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -30,15 +34,47 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
 	args: {
 		onSelectOption: fn(),
-		logo: 'Logo',
-		options: [{ text: 'Home', link: '/home', selected: true }],
+		logo: <Typography variant="h3">Logo</Typography>,
+		options: [
+			{ text: 'Home', link: '/home', selected: true, icon: <BiHome /> },
+			{ text: 'Home', link: '/home', selected: false, icon: <BiHome /> },
+		],
 	},
 	render: (args) => {
 		return (
 			<div style={{ width: '1000px' }}>
 				<LayoutFullWindow>
-					<Navigation {...args} />
-					<div>content</div>
+					<Navigation
+						{...args}
+						footer={
+							<Menu
+								options={[
+									{ title: 'Title', onSelect: fn() },
+									{ title: 'Title', onSelect: fn() },
+									{ title: 'Title', onSelect: fn() },
+								]}>
+								<div
+									style={{
+										display: 'flex',
+										width: '100%',
+										alignItems: 'center',
+									}}>
+									<Avatar
+										img="https://acropora.ru/images/yootheme/pages/features/panel03.jpg"
+										placeholder="avatar"
+									/>
+
+									<Typography variant="body1" bold>
+										Максим Дмитриев
+									</Typography>
+								</div>
+							</Menu>
+						}
+					/>
+					<PageLayout>
+						<PageLayout.Header title="Text" />
+						<PageLayout.Content>content</PageLayout.Content>
+					</PageLayout>
 				</LayoutFullWindow>
 			</div>
 		);

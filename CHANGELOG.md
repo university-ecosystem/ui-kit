@@ -2,6 +2,118 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/university-ecosystem/ui-kit/compare/v0.3.13...v0.4.0) (2024-05-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* fixed z-index position of navbar
+
+### Bug Fixes
+
+* nav and menu styles fixed ([980fcb5](https://github.com/university-ecosystem/ui-kit/commit/980fcb5ca07dee786de1bc09925c1538446eb05d))
+
+### [0.3.13](https://github.com/university-ecosystem/ui-kit/compare/v0.3.12...v0.3.13) (2024-05-14)
+
+
+### Bug Fixes
+
+* some style improvements ([9b8c1f6](https://github.com/university-ecosystem/ui-kit/commit/9b8c1f6451debc2e36dc508ef14470f43f38fa11))
+
+### [0.3.12](https://github.com/university-ecosystem/ui-kit/compare/v0.3.11...v0.3.12) (2024-05-14)
+
+
+### Bug Fixes
+
+* nav options fix ([d0a4afe](https://github.com/university-ecosystem/ui-kit/commit/d0a4afe534cf2a169a38c3a5162ff175666ee101))
+
+### [0.3.11](https://github.com/university-ecosystem/ui-kit/compare/v0.3.10...v0.3.11) (2024-05-14)
+
+
+### Features
+
+* new page layout ([0da5ea4](https://github.com/university-ecosystem/ui-kit/commit/0da5ea414bfa06bbe5f4b29c4e43454a99a23ca6))
+* useToggle hook ([526cab3](https://github.com/university-ecosystem/ui-kit/commit/526cab355129f705fda841993f6d1eee04e69fdd))
+
+### [0.3.10](https://github.com/university-ecosystem/ui-kit/compare/v0.3.9...v0.3.10) (2024-05-11)
+
+
+### Bug Fixes
+
+* navigation styles fix ([87cce72](https://github.com/university-ecosystem/ui-kit/commit/87cce72c74a527d2a6bf1d952cf19875fbfaef0f))
+
+### [0.3.9](https://github.com/university-ecosystem/ui-kit/compare/v0.3.8...v0.3.9) (2024-05-11)
+
+
+### Bug Fixes
+
+* border color fix ([8753d0f](https://github.com/university-ecosystem/ui-kit/commit/8753d0f55dc7b8534eb73117dbf513f38da11a25))
+
+### [0.3.8](https://github.com/university-ecosystem/ui-kit/compare/v0.3.7...v0.3.8) (2024-05-11)
+
+
+### Bug Fixes
+
+* menu style fixes ([f7bd42a](https://github.com/university-ecosystem/ui-kit/commit/f7bd42a47af9fd8867a6b4006112fad967f7f6c2))
+
+### [0.3.7](https://github.com/university-ecosystem/ui-kit/compare/v0.3.6...v0.3.7) (2024-05-11)
+
+
+### Bug Fixes
+
+* nav option border fix ([69a4a23](https://github.com/university-ecosystem/ui-kit/commit/69a4a233a8805775208139092d709796677b221a))
+
+### [0.3.6](https://github.com/university-ecosystem/ui-kit/compare/v0.3.5...v0.3.6) (2024-05-11)
+
+
+### Features
+
+* avatar component ([251ecf2](https://github.com/university-ecosystem/ui-kit/commit/251ecf2518957fa9ec976d03a8890128e92ba911))
+
+### [0.3.5](https://github.com/university-ecosystem/ui-kit/compare/v0.3.4...v0.3.5) (2024-05-11)
+
+
+### Features
+
+* menu item ([5320982](https://github.com/university-ecosystem/ui-kit/commit/5320982fd1eac0ff27068ede347899dd38eb690d))
+
+### [0.3.4](https://github.com/university-ecosystem/ui-kit/compare/v0.3.3...v0.3.4) (2024-05-10)
+
+
+### Bug Fixes
+
+* border bottom for nav logo removed ([606bd8f](https://github.com/university-ecosystem/ui-kit/commit/606bd8f412a04fd758059c7ab17df64ebaea3be2))
+
+### [0.3.3](https://github.com/university-ecosystem/ui-kit/compare/v0.3.2...v0.3.3) (2024-05-10)
+
+
+### Features
+
+* page layout ([303a72e](https://github.com/university-ecosystem/ui-kit/commit/303a72e0e8a2e2fc260f704679ceeb0b7d4c9bdb))
+
+### [0.3.2](https://github.com/university-ecosystem/ui-kit/compare/v0.3.1...v0.3.2) (2024-05-09)
+
+
+### Bug Fixes
+
+* mobile styles fixes ([7e5262e](https://github.com/university-ecosystem/ui-kit/commit/7e5262e447ab1d7679f235e6ef3fce96501d006f))
+
+### [0.3.1](https://github.com/university-ecosystem/ui-kit/compare/v0.3.0...v0.3.1) (2024-05-06)
+
+
+### Bug Fixes
+
+* nav styles fix ([44516c4](https://github.com/university-ecosystem/ui-kit/commit/44516c482fc60882529cbd41c98f9da9790e202c))
+
+## [0.3.0](https://github.com/university-ecosystem/ui-kit/compare/v0.2.4...v0.3.0) (2024-05-06)
+
+### [0.2.4](https://github.com/university-ecosystem/ui-kit/compare/v0.2.3...v0.2.4) (2024-05-06)
+
+
+### Features
+
+* card done ([8f133d6](https://github.com/university-ecosystem/ui-kit/commit/8f133d6fb739b56d00f9fa0eb99ce091534fb21f))
+
 ### [0.2.3](https://github.com/university-ecosystem/ui-kit/compare/v0.2.2...v0.2.3) (2024-04-16)
 
 

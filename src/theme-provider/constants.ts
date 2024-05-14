@@ -57,9 +57,9 @@ export const ecosystemTheme: Theme = {
 		},
 	},
 	breakPoints: {
-		mobile: '40em',
-		tablet: '48em',
-		laptop: '64em',
-		desktop: '80em',
+		mobile: '576px',
+		tablet: '768px',
+		laptop: '992px',
+		desktop: '1200px',
 	},
 };

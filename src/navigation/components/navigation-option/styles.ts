@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledNavOption = styled('div')<{ selected?: boolean }>`
+	height: fit-content;
 	padding: 12px;
 	display: flex;
 
@@ -9,23 +10,23 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 	background-color: transparent;
 	color: ${(props) => props.theme.colors.grey[700]};
 
-	border-radius: 12px;
-
 	cursor: pointer;
 
-	//eslint-ignore
-	/* prettier-ignore */
-	@media only screen and 
-	(max-width: ${(props) => props.theme.breakPoints.mobile}) {
+	border-bottom: 3px solid transparent;
+
+	@media screen and (max-width: ${(props) => props.theme.breakPoints.mobile}) {
 		width: fit-content;
-		font-size: 0;
+
+		justify-content: center;
 	}
 
 	${(props) => {
 		if (props.selected) {
 			return `
-                background-color: ${props.theme.colors.primary.base};
-                color: white;
+				
+				border-color: ${props.theme.colors.primary.base};
+                color: ${props.theme.colors.primary.base};
+				font-weight: 600;
             `;
 		}
 		return '';
