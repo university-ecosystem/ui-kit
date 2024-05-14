@@ -1,23 +1,21 @@
 import styled from '@emotion/styled';
 
 export const StyledNavigationWrapper = styled('div')`
-	height: 100%;
+	width: 100%;
+
+	height: fit-content;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 
-	gap: 12px;
+	align-items: center;
+
+	gap: 24px;
 	margin: 0;
-
-	padding-top: 12px;
-
-	border-right: 1px solid ${(props) => props.theme.colors.grey[100]};
 `;
 
 export const StyledLogoWrapper = styled('div')`
-	/* /width: 100%; */
-
-	padding-bottom: 12px;
+	height: fit-content;
 
 	cursor: pointer;
 
@@ -27,12 +25,12 @@ export const StyledLogoWrapper = styled('div')`
 `;
 
 export const StyledOptionsWrapper = styled('div')`
-	width: 100%;
+	height: fit-content;
 	flex-grow: 1;
 
 	display: flex;
 
-	flex-direction: column;
+	flex-direction: row;
 
 	gap: 5px;
 `;

@@ -1,23 +1,23 @@
 import styled from '@emotion/styled';
 
 export const MenuWrapper = styled('div')`
-	background-color: ${(props) => props.theme.colors.grey['100']};
+	//background-color: ${(props) => props.theme.colors.grey['100']};
 
 	width: 100%;
 
 	position: relative;
-	border-radius: 12px;
+	padding: 5px;
 `;
 
 export const MenuChildrenWrapper = styled('div')`
-	height: 100%;
-	padding: 20px;
+	height: fit-content;
+	//padding: 20px;
 
 	cursor: pointer;
 
 	border-radius: 12px;
 
-	border: 2px solid ${(props) => props.theme.colors.grey['200']};
+	//border: 2px solid ${(props) => props.theme.colors.grey['200']};
 
 	:hover {
 		background-color: ${(props) => props.theme.colors.grey['200']};
@@ -30,7 +30,7 @@ export const MenuListWrapper = styled('ul')`
 	position: absolute;
 
 	display: flex;
-	bottom: 100%;
+	top: 100%;
 
 	list-style: none;
 

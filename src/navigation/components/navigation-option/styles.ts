@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledNavOption = styled('div')<{ selected?: boolean }>`
+	height: fit-content;
 	padding: 12px;
 	display: flex;
 
@@ -11,7 +12,7 @@ export const StyledNavOption = styled('div')<{ selected?: boolean }>`
 
 	cursor: pointer;
 
-	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
 
 	//eslint-ignore
 	/* prettier-ignore */

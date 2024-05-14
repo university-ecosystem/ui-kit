@@ -63,11 +63,10 @@ export const Primary: Story = {
 										img="https://acropora.ru/images/yootheme/pages/features/panel03.jpg"
 										placeholder="avatar"
 									/>
-									<div style={{ width: '100%', height: '100%' }}>
-										<Typography variant="body1" bold>
-											Максим Дмитриев
-										</Typography>
-									</div>
+
+									<Typography variant="body1" bold>
+										Максим Дмитриев
+									</Typography>
 								</div>
 							</Menu>
 						}
