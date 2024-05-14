@@ -19,17 +19,17 @@ export const StyledNavigationWrapper = styled('div')`
 
 	padding: 0 12px;
 
-	border-radius: 12px;
+	//border-radius: 12px;
+
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 
 	z-index: 10000;
 
 	gap: 24px;
 	margin: 0;
 
-	@media screen and (min-width: ${(props) => props.theme.breakPoints.laptop}) {
-		margin: 1em;
-		margin-bottom: 0;
-	}
+	background-color: white;
 `;
 
 export const StyledLogoWrapper = styled('div')`
