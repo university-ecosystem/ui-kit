@@ -10,6 +10,17 @@ export const StyledNavigationWrapper = styled('div')`
 
 	align-items: center;
 
+	position: sticky;
+	top: 0;
+
+	-webkit-box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
+
+	padding: 0 12px;
+
+	border-radius: 12px;
+
 	gap: 24px;
 	margin: 0;
 `;
