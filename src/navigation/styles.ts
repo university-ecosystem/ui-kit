@@ -21,8 +21,15 @@ export const StyledNavigationWrapper = styled('div')`
 
 	border-radius: 12px;
 
+	z-index: 10000;
+
 	gap: 24px;
 	margin: 0;
+
+	@media screen and (min-width: ${(props) => props.theme.breakPoints.laptop}) {
+		margin: 1em;
+		margin-bottom: 0;
+	}
 `;
 
 export const StyledLogoWrapper = styled('div')`

@@ -30,7 +30,7 @@ export const MenuListWrapper = styled('ul')`
 	position: absolute;
 
 	display: flex;
-	top: 100%;
+	top: 110%;
 	right: 0;
 
 	list-style: none;
