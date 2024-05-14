@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.11](https://github.com/university-ecosystem/ui-kit/compare/v0.3.10...v0.3.11) (2024-05-14)
+
+
+### Features
+
+* new page layout ([0da5ea4](https://github.com/university-ecosystem/ui-kit/commit/0da5ea414bfa06bbe5f4b29c4e43454a99a23ca6))
+* useToggle hook ([526cab3](https://github.com/university-ecosystem/ui-kit/commit/526cab355129f705fda841993f6d1eee04e69fdd))
+
 ### [0.3.10](https://github.com/university-ecosystem/ui-kit/compare/v0.3.9...v0.3.10) (2024-05-11)
 
 
