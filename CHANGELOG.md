@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/university-ecosystem/ui-kit/compare/v0.4.1...v0.4.2) (2024-05-15)
+
+
+### Features
+
+* added semibold font ([b490cc0](https://github.com/university-ecosystem/ui-kit/commit/b490cc04fa0b92354fb232bfa3779520a36b366e))
+
 ### [0.4.1](https://github.com/university-ecosystem/ui-kit/compare/v0.4.0...v0.4.1) (2024-05-14)
 
 
