@@ -1,4 +1,4 @@
-export type InputSize = 'large' | 'default' | 'small';
+export type InputSize = 'large' | 'default' | 'small' | 'fullwidth';
 
 export type InputProps = React.ComponentProps<'input'> & {
 	errorText?: string;
