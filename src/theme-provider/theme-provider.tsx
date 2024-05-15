@@ -18,9 +18,12 @@ export const ThemeProvider: React.FC<{
 			styles={css`
 				@font-face {
 					font-family: 'Raleway Regular';
-					src:
-						url('${RalewayRegular}') format('ttf'),
-						url('${RalewaySemibold}') format('ttf');
+					src: url('${RalewayRegular}') format('ttf');
+				}
+
+				@font-face {
+					font-family: 'Raleway Semibold';
+					src: url('${RalewaySemibold}') format('ttf');
 				}
 
 				body {
