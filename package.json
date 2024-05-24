@@ -72,7 +72,7 @@
 		"eslint": "^8.53.0",
 		"eslint-plugin-import": "2.29.1",
 		"eslint-plugin-storybook": "^0.8.0",
-		"husky": "^8.0.0",
+		"husky": "8.0.3",
 		"prettier": "^3.0.3",
 		"rollup": "4.13.0",
 		"rollup-plugin-dts": "6.1.0",
