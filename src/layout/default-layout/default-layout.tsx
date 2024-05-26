@@ -1,4 +1,5 @@
 import React from 'react';
+import { BeatLoader } from 'react-spinners';
 import { DefaultLayoutProps } from './interfaces';
 import {
 	DefaultEmptySlot,
@@ -7,6 +8,7 @@ import {
 } from './slots';
 import { FullscreenError } from '../../errors';
 import { EmptyIllustration, ErrorIllustration } from '../../assets';
+import { ecosystemTheme } from '../../theme-provider';
 
 export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 	isLoading,
@@ -17,7 +19,7 @@ export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 	if (isLoading) {
 		return (
 			<DefaultLoadingSlot.Renderer childs={children}>
-				Loading...
+				<BeatLoader color={ecosystemTheme.colors.primary.base} />
 			</DefaultLoadingSlot.Renderer>
 		);
 	}
