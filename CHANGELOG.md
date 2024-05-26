@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.10](https://github.com/university-ecosystem/ui-kit/compare/v0.4.9...v0.4.10) (2024-05-26)
+
+
+### Features
+
+* page layout header actions ([ab2aa7c](https://github.com/university-ecosystem/ui-kit/commit/ab2aa7c617a15d5c6737ce949a542c922188da4e))
+
 ### [0.4.9](https://github.com/university-ecosystem/ui-kit/compare/v0.4.8...v0.4.9) (2024-05-26)
 
 
