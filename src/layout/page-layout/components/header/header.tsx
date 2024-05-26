@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { useMedia } from 'use-media';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 import { PageHeaderProps } from './interfaces';
-import { PageHeaderWrapper } from './styles';
+import { PageHeaderActions, PageHeaderWrapper } from './styles';
 import { PageHeaderSlot } from '../slots';
 import { Typography } from '../../../../typography';
+import { Button } from '../../../../button';
+import { ecosystemTheme } from '../../../../theme-provider';
+import { Menu } from '../../../../menu';
 
 export const PageHeader: React.FC<PageHeaderProps> = ({
 	title,
 	children,
+	actions,
 }): React.ReactElement => {
+	const isMobile = useMedia(ecosystemTheme.breakPoints.mobile);
+
+	const menuActions = useMemo(
+		() =>
+			actions?.map((action) => ({
+				title: action.children,
+				icon: action.icon,
+				onSelect: () => action.onClick,
+			})),
+		[]
+	);
+
 	return (
 		<PageHeaderSlot.Renderer childs={children}>
 			<PageHeaderWrapper>
@@ -16,6 +34,21 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 				) : (
 					<>{title}</>
 				)}
+				<PageHeaderActions>
+					{isMobile ? (
+						<Menu options={menuActions ?? []}>
+							<Button onlyIcon variant="text">
+								<BsThreeDotsVertical color="inherit" />
+							</Button>
+						</Menu>
+					) : (
+						<>
+							{actions?.map((action) => {
+								return <Button {...action} />;
+							})}
+						</>
+					)}
+				</PageHeaderActions>
 			</PageHeaderWrapper>
 		</PageHeaderSlot.Renderer>
 	);

@@ -72,7 +72,10 @@ export const Primary: Story = {
 						}
 					/>
 					<PageLayout>
-						<PageLayout.Header title="Text" />
+						<PageLayout.Header
+							title="Text"
+							actions={[{ children: 'Бам', variant: 'secondary' }]}
+						/>
 						<PageLayout.Content>content</PageLayout.Content>
 					</PageLayout>
 				</LayoutFullWindow>

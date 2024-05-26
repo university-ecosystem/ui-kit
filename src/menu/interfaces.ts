@@ -1,5 +1,5 @@
 export interface MenuOptionProps {
-	title: string;
+	title: string | React.ReactElement | React.ReactNode;
 	description?: string;
 	icon?: React.ReactElement | React.ReactNode;
 	onSelect: () => void;
