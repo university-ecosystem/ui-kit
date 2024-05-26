@@ -14,7 +14,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 	children,
 	actions,
 }): React.ReactElement => {
-	const isMobile = useMedia(ecosystemTheme.breakPoints.mobile);
+	const isMobile = useMedia({ maxWidth: ecosystemTheme.breakPoints.mobile });
 
 	const menuActions = useMemo(
 		() =>
