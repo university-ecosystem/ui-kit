@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledCardWrapper = styled('div')`
-	width: 400px;
+	width: 100%;
 	height: fit-content;
 
 	display: flex;
@@ -12,7 +12,8 @@ export const StyledCardWrapper = styled('div')`
 	}
 
 	border-radius: 12px;
-	border: 0.5px solid ${(props) => props.theme.colors.grey[100]};
+	border: 0.5px solid rgba(163, 163, 168, 0.5);
+	background-color: white;
 
 	padding: 12px;
 
