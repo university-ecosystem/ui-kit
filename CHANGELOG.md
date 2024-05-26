@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.7](https://github.com/university-ecosystem/ui-kit/compare/v0.4.6...v0.4.7) (2024-05-26)
+
+
+### Bug Fixes
+
+* added loader ([2e63ecf](https://github.com/university-ecosystem/ui-kit/commit/2e63ecf53aba5a13acb8338de83a6eff3ea8b6b7))
+
 ### [0.4.6](https://github.com/university-ecosystem/ui-kit/compare/v0.4.5...v0.4.6) (2024-05-25)
 
 
