@@ -40,7 +40,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 							<Button
 								onlyIcon
 								variant="text"
-								size="small"
+								size="inherit"
 								icon={<BsThreeDotsVertical color="inherit" />}
 							/>
 						</Menu>
