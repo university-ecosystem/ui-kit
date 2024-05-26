@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.13](https://github.com/university-ecosystem/ui-kit/compare/v0.4.12...v0.4.13) (2024-05-26)
+
+
+### Bug Fixes
+
+* align items and options size ([17517f1](https://github.com/university-ecosystem/ui-kit/commit/17517f1ea17a1b96523d7667f0a2efb05a86b04c))
+
 ### [0.4.12](https://github.com/university-ecosystem/ui-kit/compare/v0.4.11...v0.4.12) (2024-05-26)
 
 
