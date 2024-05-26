@@ -37,9 +37,11 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 				<PageHeaderActions>
 					{isMobile ? (
 						<Menu options={menuActions ?? []}>
-							<Button onlyIcon variant="text">
-								<BsThreeDotsVertical color="inherit" />
-							</Button>
+							<Button
+								onlyIcon
+								variant="text"
+								icon={<BsThreeDotsVertical color="inherit" />}
+							/>
 						</Menu>
 					) : (
 						<>
