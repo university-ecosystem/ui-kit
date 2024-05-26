@@ -17,7 +17,7 @@ export const StyledNavigationWrapper = styled('div')`
 	-moz-box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
 	box-shadow: 0px 10px 13px -1px rgba(34, 60, 80, 0.2);
 
-	padding: 0 12px;
+	padding: 12px 12px;
 
 	//border-radius: 12px;
 
