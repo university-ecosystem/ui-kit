@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.8](https://github.com/university-ecosystem/ui-kit/compare/v0.4.7...v0.4.8) (2024-05-26)
+
+
+### Bug Fixes
+
+* navigation padding fix ([3840561](https://github.com/university-ecosystem/ui-kit/commit/38405615e8512a8d8f313c986df3b5d0462e37e2))
+
 ### [0.4.7](https://github.com/university-ecosystem/ui-kit/compare/v0.4.6...v0.4.7) (2024-05-26)
 
 
