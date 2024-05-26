@@ -7,6 +7,7 @@ import {
 } from '@emotion/react';
 import { ecosystemTheme } from './constants';
 import RalewayRegular from '../font/Raleway-Regular.ttf';
+import RalewaySemibold from '../font/Raleway-SemiBold.ttf';
 
 export const ThemeProvider: React.FC<{
 	children: React.ReactNode;
@@ -18,6 +19,11 @@ export const ThemeProvider: React.FC<{
 				@font-face {
 					font-family: 'Raleway Regular';
 					src: url('${RalewayRegular}') format('ttf');
+				}
+
+				@font-face {
+					font-family: 'Raleway Semibold';
+					src: url('${RalewaySemibold}') format('ttf');
 				}
 
 				body {

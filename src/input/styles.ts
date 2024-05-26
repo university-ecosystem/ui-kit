@@ -4,7 +4,7 @@ import { InputProps } from './interfaces';
 export const StyledInputContainer = styled('div')`
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
+	//width: fit-content;
 	gap: 8px;
 `;
 
@@ -13,6 +13,8 @@ export const StyledInputWrapper = styled('div')<
 >`
 	width: ${(props) => {
 		switch (props.variant) {
+			case 'fullwidth':
+				return '100%';
 			case 'large':
 				return '230px';
 			case 'default':

@@ -12,7 +12,7 @@ export const CardFooter: React.FC<CardFooterProps> = ({
 		<CardFooterSlot.Renderer childs={children}>
 			<StyledCardFooter>
 				{actions.map((actionProps) => (
-					<Button {...actionProps} size="small" />
+					<Button {...actionProps} />
 				))}
 			</StyledCardFooter>
 		</CardFooterSlot.Renderer>

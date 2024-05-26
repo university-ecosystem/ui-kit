@@ -8,4 +8,6 @@ export const StyledFullLayout = styled('div')<{ gridTemplate?: string }>`
 	flex-direction: column;
 
 	gap: 12px;
+
+	background-color: rgba(241, 241, 241, 0.8);
 `;

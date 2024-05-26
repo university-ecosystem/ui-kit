@@ -2,6 +2,97 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.13](https://github.com/university-ecosystem/ui-kit/compare/v0.4.12...v0.4.13) (2024-05-26)
+
+
+### Bug Fixes
+
+* align items and options size ([17517f1](https://github.com/university-ecosystem/ui-kit/commit/17517f1ea17a1b96523d7667f0a2efb05a86b04c))
+
+### [0.4.12](https://github.com/university-ecosystem/ui-kit/compare/v0.4.11...v0.4.12) (2024-05-26)
+
+
+### Bug Fixes
+
+* icon fix ([c1878cd](https://github.com/university-ecosystem/ui-kit/commit/c1878cdb401609fa91614266e6dcbe107f689fe7))
+
+### [0.4.11](https://github.com/university-ecosystem/ui-kit/compare/v0.4.10...v0.4.11) (2024-05-26)
+
+
+### Bug Fixes
+
+* useMedia fix ([9157bac](https://github.com/university-ecosystem/ui-kit/commit/9157bacd212e6b53e96bf59ca7faad8826dc82ce))
+
+### [0.4.10](https://github.com/university-ecosystem/ui-kit/compare/v0.4.9...v0.4.10) (2024-05-26)
+
+
+### Features
+
+* page layout header actions ([ab2aa7c](https://github.com/university-ecosystem/ui-kit/commit/ab2aa7c617a15d5c6737ce949a542c922188da4e))
+
+### [0.4.9](https://github.com/university-ecosystem/ui-kit/compare/v0.4.8...v0.4.9) (2024-05-26)
+
+
+### Bug Fixes
+
+* some card styles fixes ([d5918f2](https://github.com/university-ecosystem/ui-kit/commit/d5918f2d0dbccc7f373bcec247dda25b3abe111a))
+
+### [0.4.8](https://github.com/university-ecosystem/ui-kit/compare/v0.4.7...v0.4.8) (2024-05-26)
+
+
+### Bug Fixes
+
+* navigation padding fix ([3840561](https://github.com/university-ecosystem/ui-kit/commit/38405615e8512a8d8f313c986df3b5d0462e37e2))
+
+### [0.4.7](https://github.com/university-ecosystem/ui-kit/compare/v0.4.6...v0.4.7) (2024-05-26)
+
+
+### Bug Fixes
+
+* added loader ([2e63ecf](https://github.com/university-ecosystem/ui-kit/commit/2e63ecf53aba5a13acb8338de83a6eff3ea8b6b7))
+
+### [0.4.6](https://github.com/university-ecosystem/ui-kit/compare/v0.4.5...v0.4.6) (2024-05-25)
+
+
+### Features
+
+* default layout ([a14ec49](https://github.com/university-ecosystem/ui-kit/commit/a14ec49e79126b259f17edbff4380cb20f77b47d))
+
+### [0.4.5](https://github.com/university-ecosystem/ui-kit/compare/v0.4.4...v0.4.5) (2024-05-24)
+
+
+### Features
+
+* error screens ([d5e5aa9](https://github.com/university-ecosystem/ui-kit/commit/d5e5aa9aaa747bdcad0af7ef55fcaab67b129eb6))
+
+### [0.4.4](https://github.com/university-ecosystem/ui-kit/compare/v0.4.3...v0.4.4) (2024-05-15)
+
+
+### Features
+
+* fullwith for input ([501034b](https://github.com/university-ecosystem/ui-kit/commit/501034bf83f214c16385db8f0c962f4a6195db0b))
+
+### [0.4.3](https://github.com/university-ecosystem/ui-kit/compare/v0.4.2...v0.4.3) (2024-05-15)
+
+
+### Bug Fixes
+
+* semibold font ([3339d50](https://github.com/university-ecosystem/ui-kit/commit/3339d50e9871a2ad8a2ab0e1ea744359150762c0))
+
+### [0.4.2](https://github.com/university-ecosystem/ui-kit/compare/v0.4.1...v0.4.2) (2024-05-15)
+
+
+### Features
+
+* added semibold font ([b490cc0](https://github.com/university-ecosystem/ui-kit/commit/b490cc04fa0b92354fb232bfa3779520a36b366e))
+
+### [0.4.1](https://github.com/university-ecosystem/ui-kit/compare/v0.4.0...v0.4.1) (2024-05-14)
+
+
+### Bug Fixes
+
+* some nav styles fix ([940d5b7](https://github.com/university-ecosystem/ui-kit/commit/940d5b7bcf29d10d9faea0e00624a1737ba5f610))
+
 ## [0.4.0](https://github.com/university-ecosystem/ui-kit/compare/v0.3.13...v0.4.0) (2024-05-14)
 
 
