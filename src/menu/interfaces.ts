@@ -8,4 +8,5 @@ export interface MenuOptionProps {
 export interface MenuProps {
 	children?: React.ReactElement | React.ReactNode;
 	options?: Array<MenuOptionProps>;
+	fitContent?: boolean;
 }

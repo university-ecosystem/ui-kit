@@ -46,8 +46,8 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 						</Menu>
 					) : (
 						<>
-							{actions?.map((action) => {
-								return <Button {...action} />;
+							{actions?.map((action, index) => {
+								return <Button key={index} {...action} />;
 							})}
 						</>
 					)}

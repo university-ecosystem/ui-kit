@@ -14,3 +14,4 @@ export * from './hoverable';
 export * from './menu';
 export * from './avatar';
 export * from './errors';
+export * from './breadcrumbs';
