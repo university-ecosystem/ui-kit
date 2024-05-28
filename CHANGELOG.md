@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/university-ecosystem/ui-kit/compare/v0.5.1...v0.5.2) (2024-05-28)
+
+
+### Features
+
+* default layout and card ([ffea774](https://github.com/university-ecosystem/ui-kit/commit/ffea77405770cd86a9e54b6386d50a0007a68017))
+
 ### [0.5.1](https://github.com/university-ecosystem/ui-kit/compare/v0.5.0...v0.5.1) (2024-05-27)
 
 
