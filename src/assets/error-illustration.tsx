@@ -3,7 +3,7 @@ import React from 'react';
 import error from './images/error.svg';
 
 export const ErrorIllustration = ({
-	width = '500px',
+	width = '100%',
 	height = '450px',
 }: React.SVGProps<SVGSVGElement>) => {
 	return (

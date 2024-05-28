@@ -35,7 +35,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 					<>{title}</>
 				)}
 				<PageHeaderActions>
-					{isMobile ? (
+					{isMobile && menuActions?.length ? (
 						<Menu options={menuActions ?? []}>
 							<Button
 								onlyIcon

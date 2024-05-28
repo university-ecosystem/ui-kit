@@ -22,4 +22,8 @@ export const StyledCardWrapper = styled('div')`
 	padding: 12px;
 
 	gap: 12px;
+
+	@media screen and (max-width: ${(props) => props.theme.breakPoints.laptop}) {
+		width: 100%;
+	}
 `;
