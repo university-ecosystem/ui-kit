@@ -7,6 +7,7 @@ import dts from 'rollup-plugin-dts';
 import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import url from 'rollup-plugin-url';
+import image from '@rollup/plugin-image';
 
 import packageJson from './package.json';
 
@@ -30,6 +31,7 @@ export default [
 			}),
 			typescript({ tsconfig: './tsconfig.json' }),
 			terser(),
+			image(),
 		],
 		external: ['react', 'react-dom'],
 	},
