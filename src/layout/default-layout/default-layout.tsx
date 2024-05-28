@@ -1,5 +1,6 @@
 import React from 'react';
 import { BeatLoader } from 'react-spinners';
+import { IoReloadOutline } from 'react-icons/io5';
 import { DefaultLayoutProps } from './interfaces';
 import {
 	DefaultEmptySlot,
@@ -29,7 +30,13 @@ export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 			<DefaultErrorSlot.Renderer childs={children}>
 				<FullscreenError
 					title="Произошла ошибка"
+					description="попробуйте перезагрузить страницу"
 					image={<ErrorIllustration />}
+					action={{
+						children: 'Перезагрузить',
+						size: 'inherit',
+						icon: <IoReloadOutline />,
+					}}
 				/>
 			</DefaultErrorSlot.Renderer>
 		);
@@ -38,7 +45,10 @@ export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 	if (isEmpty) {
 		return (
 			<DefaultEmptySlot.Renderer childs={children}>
-				<FullscreenError title="Тут пусто" image={<EmptyIllustration />} />
+				<FullscreenError
+					title="Мы ничего не нашли"
+					image={<EmptyIllustration />}
+				/>
 			</DefaultEmptySlot.Renderer>
 		);
 	}
