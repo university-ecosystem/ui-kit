@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/university-ecosystem/ui-kit/compare/v0.5.2...v0.5.3) (2024-05-28)
+
+
+### Bug Fixes
+
+* rollup config fix ([46df27a](https://github.com/university-ecosystem/ui-kit/commit/46df27a440ee1decf4e255a3ae73c99fd0752aa0))
+* style fixes ([d1a626c](https://github.com/university-ecosystem/ui-kit/commit/d1a626cad4e220282f3ed171d310232d4af5c698))
+
 ### [0.5.2](https://github.com/university-ecosystem/ui-kit/compare/v0.5.1...v0.5.2) (2024-05-28)
 
 
