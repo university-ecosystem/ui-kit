@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const StyledCardWrapper = styled('div')`
-	width: 250px;
-	height: 400px;
+	width: 100%;
+	height: 500px;
 
 	display: flex;
 	flex-direction: column;
