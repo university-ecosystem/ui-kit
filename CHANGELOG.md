@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.6](https://github.com/university-ecosystem/ui-kit/compare/v0.5.5...v0.5.6) (2024-05-29)
+
+
+### Features
+
+* button loading state ([26aeea1](https://github.com/university-ecosystem/ui-kit/commit/26aeea19db4f576d3ba70b2ea5d75dfc2c1a8859))
+
+
+### Bug Fixes
+
+* badge input deleted ([b44444e](https://github.com/university-ecosystem/ui-kit/commit/b44444e14330fffefa71aa738a47c2fb45224190))
+
 ### [0.5.5](https://github.com/university-ecosystem/ui-kit/compare/v0.5.4...v0.5.5) (2024-05-29)
 
 
