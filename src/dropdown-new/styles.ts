@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const StyledSelectWrapper = styled('div')`
 	display: flex;
 	flex-direction: column;
-	width: 258px;
+
 	position: relative;
 
 	gap: 8px;

@@ -17,4 +17,5 @@ export type ButtonProps = React.ComponentProps<'button'> & {
 	onlyIcon?: boolean;
 	icon?: React.ReactNode;
 	size?: keyof typeof ButtonSize;
+	isLoading?: boolean;
 };

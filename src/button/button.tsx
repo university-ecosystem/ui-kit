@@ -1,6 +1,8 @@
 import React from 'react';
+import { PulseLoader } from 'react-spinners';
 import { ButtonWrapper } from './styles';
 import { ButtonProps } from './interfaces';
+import { ecosystemTheme } from '../theme-provider';
 
 export const Button: React.FC<ButtonProps> = ({
 	children,
@@ -8,13 +10,28 @@ export const Button: React.FC<ButtonProps> = ({
 	variant = 'filled',
 	onlyIcon = false,
 	size = 'default',
+	isLoading,
 	onClick,
 	...rest
 }) => {
 	return (
 		<ButtonWrapper variant={variant} onClick={onClick} size={size} {...rest}>
-			{icon && <div>{icon}</div>}
-			{!onlyIcon && <div>{children}</div>}
+			{isLoading ? (
+				<>
+					<PulseLoader
+						color={
+							variant === 'filled'
+								? 'white'
+								: ecosystemTheme.colors.primary['base']
+						}
+					/>
+				</>
+			) : (
+				<>
+					{icon && <div>{icon}</div>}
+					{!onlyIcon && <div>{children}</div>}
+				</>
+			)}
 		</ButtonWrapper>
 	);
 };
