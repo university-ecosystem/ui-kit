@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { Dropdown } from '../dropdown';
+import { Dropdown } from '../dropdown-new';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -36,7 +36,7 @@ export const Primary: Story = {
 	args: {
 		placeholder: 'Выберите одну из опций',
 		options: [
-			{ title: 'test1', value: 'test1', id: '1' },
+			{ title: 'ИС-Б18', value: 'test1', id: '1' },
 			{ title: 'test2', value: 'test2', id: '2' },
 			{ title: 'test3', value: 'test3', id: '3' },
 			{ title: 'test4', value: 'test4', id: '4' },

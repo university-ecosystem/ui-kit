@@ -37,7 +37,7 @@ export const StyledInputWrapper = styled('div')<
 	}}
 
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
-	border-radius: 8px;
+	border-radius: 14px;
 	background-color: ${(props) => props.theme.colors.grey[100]};
 
 	display: flex;

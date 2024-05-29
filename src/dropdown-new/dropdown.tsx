@@ -1,10 +1,12 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
-import { IoIosArrowDown } from 'react-icons/io';
+import { RxCross1 } from 'react-icons/rx';
 import { SelectProps } from './interfaces';
 import { StyledOptionsWrapper, StyledSelectWrapper } from './styles';
 import { DropdownOption, Option } from './components';
-import { BadgeInput } from '../input';
+import { Input } from '../input';
+import { FilterError } from '../errors';
+import { Badge } from '../badge';
 
 //!! NEEDS WORK
 
@@ -13,14 +15,25 @@ export const Dropdown: React.FC<SelectProps> = ({
 	options,
 	multiSelect,
 	placeholder,
+	disableSearch,
 	onSelectOption,
+	...props
 }): React.ReactElement => {
 	const [isOpened, setIsOpened] = useState<boolean>(false);
 	const [values, setValues] = useState<Array<Option>>([]);
+	const [searchValue, setSearchValue] = useState<string>('');
 
 	useEffect(() => {
 		setValues(value);
 	}, []);
+
+	const filteredOptions = useMemo(() => {
+		if (searchValue.length) {
+			return options.filter((option) => option.title.includes(searchValue));
+		}
+
+		return options;
+	}, [searchValue]);
 
 	const handleSelect = useCallback(
 		(option: Option, checked: boolean) => {
@@ -59,27 +72,43 @@ export const Dropdown: React.FC<SelectProps> = ({
 		<ClickAwayListener onClickAway={handleClickAway}>
 			<StyledSelectWrapper>
 				<>
-					<BadgeInput
+					<Input
+						{...props}
 						placeholder={placeholder}
-						value={values}
+						value={searchValue}
+						disableClearIcon={disableSearch}
+						onChange={(value) => {
+							if (!disableSearch) {
+								setSearchValue(String(value));
+							}
+						}}
 						variant="large"
 						onClick={() => {
 							setIsOpened((prev) => !prev);
 						}}
-						icon={
-							<IoIosArrowDown
-								cursor="pointer"
-								onClick={(event) => {
-									event.stopPropagation();
-									setIsOpened((prev) => !prev);
-								}}
-								transform={isOpened ? 'rotate(180)' : ''}
-							/>
-						}
 					/>
+					<div
+						style={{
+							display: 'flex',
+							flexWrap: 'wrap',
+							width: '100%',
+							gap: '6px',
+						}}>
+						{values.map((item) => {
+							return (
+								<Badge
+									text={item.title}
+									rightIcon={
+										<RxCross1 onClick={() => handleSelect(item, false)} />
+									}
+								/>
+							);
+						})}
+					</div>
 					{Boolean(isOpened) && (
 						<StyledOptionsWrapper>
-							{options.map((item) => (
+							{!filteredOptions.length && <FilterError />}
+							{filteredOptions.map((item) => (
 								<DropdownOption
 									key={item.id}
 									selected={Boolean(

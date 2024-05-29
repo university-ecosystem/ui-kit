@@ -1,6 +1,6 @@
 export interface Option {
 	id: string;
-	title: string | React.ReactElement;
+	title: string;
 	value: string | number;
 }
 
