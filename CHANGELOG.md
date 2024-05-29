@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.7](https://github.com/university-ecosystem/ui-kit/compare/v0.5.6...v0.5.7) (2024-05-29)
+
+
+### Features
+
+* added baseColor prop for input background ([7924ab6](https://github.com/university-ecosystem/ui-kit/commit/7924ab6aa39e956b5a956f10c67923929249256a))
+
 ### [0.5.6](https://github.com/university-ecosystem/ui-kit/compare/v0.5.5...v0.5.6) (2024-05-29)
 
 
