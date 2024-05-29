@@ -15,6 +15,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 			errorText,
 			rightIcon,
 			disableClearIcon = false,
+			baseColor = 'white',
 			onChange,
 			...rest
 		},
@@ -37,7 +38,10 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
 		return (
 			<StyledInputContainer>
-				<StyledInputWrapper variant={variant} errorText={errorText}>
+				<StyledInputWrapper
+					variant={variant}
+					errorText={errorText}
+					baseColor={baseColor}>
 					<StyledInput
 						ref={ref}
 						value={inputValue}

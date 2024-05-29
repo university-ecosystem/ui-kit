@@ -9,7 +9,7 @@ export const StyledInputContainer = styled('div')`
 `;
 
 export const StyledInputWrapper = styled('div')<
-	Pick<InputProps, 'variant' | 'errorText'>
+	Pick<InputProps, 'variant' | 'errorText' | 'baseColor'>
 >`
 	width: ${(props) => {
 		switch (props.variant) {
@@ -38,7 +38,8 @@ export const StyledInputWrapper = styled('div')<
 
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
 	border-radius: 14px;
-	background-color: ${(props) => props.theme.colors.grey[100]};
+	background-color: ${(props) =>
+		props.baseColor === 'white' ? 'white' : props.theme.colors.grey[100]};
 
 	display: flex;
 	align-items: center;
