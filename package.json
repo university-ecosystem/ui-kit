@@ -78,6 +78,7 @@
 		"prettier": "^3.0.3",
 		"rollup": "4.13.0",
 		"rollup-plugin-dts": "6.1.0",
+		"rollup-plugin-gzip": "3.1.2",
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-url": "3.0.1",
 		"standard-version": "^9.5.0",

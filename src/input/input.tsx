@@ -17,7 +17,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 			disableClearIcon = false,
 			baseColor = 'white',
 			name = 'input',
-			label = 'Email',
+			label = '',
 			onChange,
 			...rest
 		},

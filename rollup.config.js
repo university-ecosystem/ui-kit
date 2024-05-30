@@ -8,6 +8,7 @@ import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import url from 'rollup-plugin-url';
 import image from '@rollup/plugin-image';
+import gzipPlugin from 'rollup-plugin-gzip';
 
 import packageJson from './package.json';
 
@@ -25,6 +26,7 @@ export default [
 			peerDepsExternal(),
 			resolve(),
 			commonjs(),
+			gzipPlugin,
 			url({
 				include: ['**/*.ttf'],
 				limit: Infinity,

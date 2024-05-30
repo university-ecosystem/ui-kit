@@ -2,7 +2,11 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { RxCross1 } from 'react-icons/rx';
 import { SelectProps } from './interfaces';
-import { StyledOptionsWrapper, StyledSelectWrapper } from './styles';
+import {
+	StyledBadgeContaier,
+	StyledOptionsWrapper,
+	StyledSelectWrapper,
+} from './styles';
 import { DropdownOption, Option } from './components';
 import { Input } from '../input';
 import { FilterError } from '../errors';
@@ -82,18 +86,11 @@ export const Dropdown: React.FC<SelectProps> = ({
 								setSearchValue(String(value));
 							}
 						}}
-						variant="large"
 						onClick={() => {
 							setIsOpened((prev) => !prev);
 						}}
 					/>
-					<div
-						style={{
-							display: 'flex',
-							flexWrap: 'wrap',
-							width: '100%',
-							gap: '6px',
-						}}>
+					<StyledBadgeContaier>
 						{values.map((item) => {
 							return (
 								<Badge
@@ -104,7 +101,7 @@ export const Dropdown: React.FC<SelectProps> = ({
 								/>
 							);
 						})}
-					</div>
+					</StyledBadgeContaier>
 					{Boolean(isOpened) && (
 						<StyledOptionsWrapper>
 							{!filteredOptions.length && <FilterError />}
