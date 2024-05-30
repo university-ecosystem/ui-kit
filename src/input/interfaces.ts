@@ -9,5 +9,6 @@ export type InputProps = React.ComponentProps<'input'> & {
 	disableClearIcon?: boolean;
 	value?: string;
 	baseColor?: InputBaseColor;
+	label?: string;
 	onChange?: (value: string | number) => void;
 };
