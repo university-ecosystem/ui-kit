@@ -19,7 +19,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 									onClick={() => onCrumbClick(crumb.link)}
 									variant="text"
 									size="small"
-									color="secondary">
+									color="grey">
 									{crumb.children}
 								</Button>
 								{Boolean(index + 1 < breadcrumbs.length) && (
@@ -28,7 +28,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 										size="small"
 										icon={<MdOutlineKeyboardArrowRight />}
 										variant="text"
-										color="secondary"
+										color="grey"
 									/>
 								)}
 							</>
@@ -50,7 +50,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 							onClick={() => onCrumbClick(breadcrumbs[0].link)}
 							variant="text"
 							size="inherit"
-							color="secondary">
+							color="grey">
 							{breadcrumbs[0].children}
 						</Button>
 						<Button
@@ -58,7 +58,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 							icon={<MdOutlineKeyboardArrowRight />}
 							variant="text"
 							size="inherit"
-							color="secondary"
+							color="grey"
 						/>
 						<Menu options={options} fitContent>
 							<Button
@@ -66,7 +66,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 								icon={<HiDotsHorizontal />}
 								variant="text"
 								size="fullWidth"
-								color="secondary"
+								color="grey"
 							/>
 						</Menu>
 						<Button
@@ -74,7 +74,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 							icon={<MdOutlineKeyboardArrowRight />}
 							variant="text"
 							size="inherit"
-							color="secondary"
+							color="grey"
 						/>
 						<Button
 							key={`${breadcrumbs[breadcrumbs.length - 1].link}`}
@@ -83,7 +83,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = React.memo(
 							}
 							variant="text"
 							size="inherit"
-							color="secondary">
+							color="grey">
 							{breadcrumbs[breadcrumbs.length - 1].children}
 						</Button>
 					</>
