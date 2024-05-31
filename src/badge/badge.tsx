@@ -9,7 +9,7 @@ export const Badge: React.FC<BadgeProps> = ({
 	onClick,
 	leftIcon,
 	variant = 'filled',
-	color = 'primary',
+	color = 'contrast',
 	text,
 }): React.ReactElement => {
 	return (

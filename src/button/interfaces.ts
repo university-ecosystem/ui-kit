@@ -1,3 +1,15 @@
+export const ButtonColor = {
+	primary: 'primary',
+	contrast: 'contrast',
+	grey: 'grey',
+};
+
+export interface ButtonColorValues {
+	hover: string;
+	base: string;
+	clicked: string;
+}
+
 export const ButtonVariants = {
 	filled: 'filled',
 	secondary: 'secondary',
@@ -18,4 +30,5 @@ export type ButtonProps = React.ComponentProps<'button'> & {
 	icon?: React.ReactNode;
 	size?: keyof typeof ButtonSize;
 	isLoading?: boolean;
+	color?: keyof typeof ButtonColor;
 };

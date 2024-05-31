@@ -5,6 +5,7 @@ export const BadgeVariants = {
 
 export const BadgeColor = {
 	primary: 'primary',
+	contrast: 'contrast',
 	grey: 'grey',
 };
 
