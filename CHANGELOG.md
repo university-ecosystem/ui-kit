@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.10](https://github.com/university-ecosystem/ui-kit/compare/v0.5.9...v0.5.10) (2024-05-31)
+
+
+### Features
+
+* contrast color for button and badge ([b757ed4](https://github.com/university-ecosystem/ui-kit/commit/b757ed4ea23a9fce663a3062a1e092c6c26762dd))
+
 ### [0.5.9](https://github.com/university-ecosystem/ui-kit/compare/v0.5.8...v0.5.9) (2024-05-30)
 
 
