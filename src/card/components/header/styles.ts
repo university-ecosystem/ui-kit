@@ -25,4 +25,6 @@ export const StyledCardImageWrapper = styled('div')`
 	background-color: ${(props) => props.theme.colors.primary.base};
 
 	border-radius: 12px;
+
+	display: flex;
 `;
