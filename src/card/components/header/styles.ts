@@ -21,6 +21,7 @@ export const StyledCardImageWrapper = styled('div')`
 	width: 100%;
 
 	min-height: 40%;
+	height: 40%;
 
 	background-color: ${(props) => props.theme.colors.primary.base};
 
