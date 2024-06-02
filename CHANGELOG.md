@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.12](https://github.com/university-ecosystem/ui-kit/compare/v0.5.11...v0.5.12) (2024-06-02)
+
+
+### Bug Fixes
+
+* card image height fix ([29b43fc](https://github.com/university-ecosystem/ui-kit/commit/29b43fc9a340d9de70e8401397e6de72e42b1a65))
+
 ### [0.5.11](https://github.com/university-ecosystem/ui-kit/compare/v0.5.10...v0.5.11) (2024-06-02)
 
 
