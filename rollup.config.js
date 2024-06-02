@@ -10,6 +10,8 @@ import url from 'rollup-plugin-url';
 import image from '@rollup/plugin-image';
 import gzipPlugin from 'rollup-plugin-gzip';
 
+import { babel } from '@rollup/plugin-babel';
+
 import packageJson from './package.json';
 
 export default [
@@ -34,6 +36,7 @@ export default [
 			typescript({ tsconfig: './tsconfig.json' }),
 			terser(),
 			image(),
+			babel({ plugins: ['@emotion'] }),
 		],
 		external: ['react', 'react-dom'],
 	},
