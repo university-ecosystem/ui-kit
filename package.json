@@ -1,6 +1,6 @@
 {
 	"name": "@university-ecosystem/ui-kit",
-	"version": "0.5.15",
+	"version": "0.5.16",
 	"description": "University ecosystem ui-kit ",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",

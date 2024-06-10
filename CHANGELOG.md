@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.16](https://github.com/university-ecosystem/ui-kit/compare/v0.5.15...v0.5.16) (2024-06-10)
+
+
+### Bug Fixes
+
+* hoverable width and height ([298b113](https://github.com/university-ecosystem/ui-kit/commit/298b113c6364fe2e8b180e0d840aa17a2cfefadb))
+
 ### [0.5.15](https://github.com/university-ecosystem/ui-kit/compare/v0.5.14...v0.5.15) (2024-06-08)
 
 
