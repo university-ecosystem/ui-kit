@@ -11,10 +11,11 @@ import { Hoverable } from '../hoverable';
 
 const CardComponent: React.FC<CardProps> = ({
 	children,
+	onClick,
 }): React.ReactElement => {
 	return (
 		<Hoverable>
-			<StyledCardWrapper>
+			<StyledCardWrapper onClick={onClick}>
 				<StyledCardImageWrapper />
 				{children}
 			</StyledCardWrapper>
