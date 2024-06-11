@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.18](https://github.com/university-ecosystem/ui-kit/compare/v0.5.17...v0.5.18) (2024-06-11)
+
+
+### Features
+
+* added onClick for Card component ([8fab40e](https://github.com/university-ecosystem/ui-kit/commit/8fab40e3803e3fddd6cc7c60fd82d91f8f0df511))
+
 ### [0.5.17](https://github.com/university-ecosystem/ui-kit/compare/v0.5.16...v0.5.17) (2024-06-11)
 
 
