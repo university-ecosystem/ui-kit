@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.17](https://github.com/university-ecosystem/ui-kit/compare/v0.5.16...v0.5.17) (2024-06-11)
+
+
+### Bug Fixes
+
+* background fix ([be0ddc9](https://github.com/university-ecosystem/ui-kit/commit/be0ddc9fb9769da3072edbefa6255c79f4215fd1))
+
 ### [0.5.16](https://github.com/university-ecosystem/ui-kit/compare/v0.5.15...v0.5.16) (2024-06-10)
 
 
