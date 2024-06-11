@@ -18,7 +18,7 @@ export const ButtonWrapper = styled('button')<
 
 	justify-content: center;
 	align-items: center;
-	gap: 4px;
+	gap: 8px;
 
 	${(props) => {
 		if (props.size === 'default') {
