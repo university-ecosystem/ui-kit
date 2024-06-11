@@ -7,5 +7,5 @@ export const StyledFullLayout = styled('div')<{ gridTemplate?: string }>`
 	display: flex;
 	flex-direction: column;
 
-	background-color: rgba(241, 241, 241, 0.8);
+	background-color: rgba(241, 241, 241, 0.4);
 `;
