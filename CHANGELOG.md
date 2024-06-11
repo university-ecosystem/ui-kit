@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.19](https://github.com/university-ecosystem/ui-kit/compare/v0.5.18...v0.5.19) (2024-06-11)
+
+
+### Bug Fixes
+
+* button align items center ([6acbee7](https://github.com/university-ecosystem/ui-kit/commit/6acbee782054a1069765995dd1e125539d65c279))
+
 ### [0.5.18](https://github.com/university-ecosystem/ui-kit/compare/v0.5.17...v0.5.18) (2024-06-11)
 
 
