@@ -7,4 +7,5 @@ export interface NavigationProps {
 	onSelectOption: (link: string) => void;
 	options: Array<OptionProps>;
 	footer?: React.ReactElement | React.ReactNode;
+	optionsPosition?: string;
 }

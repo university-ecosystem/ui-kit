@@ -42,13 +42,15 @@ export const StyledLogoWrapper = styled('div')`
 	}
 `;
 
-export const StyledOptionsWrapper = styled('div')`
+export const StyledOptionsWrapper = styled('div')<{ optionsPosition: string }>`
 	height: fit-content;
 	flex-grow: 1;
 
 	display: flex;
 
 	flex-direction: row;
+
+	justify-content: ${(props) => props.optionsPosition};
 
 	gap: 5px;
 `;
