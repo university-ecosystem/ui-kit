@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.22](https://github.com/university-ecosystem/ui-kit/compare/v0.5.21...v0.5.22) (2024-06-12)
+
+
+### Features
+
+* added options position prop for navigation ([7bf183c](https://github.com/university-ecosystem/ui-kit/commit/7bf183c52b97a36162e46bad802473007d7f48c7))
+
 ### [0.5.21](https://github.com/university-ecosystem/ui-kit/compare/v0.5.20...v0.5.21) (2024-06-12)
 
 
