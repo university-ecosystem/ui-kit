@@ -15,3 +15,5 @@ export * from './avatar';
 export * from './errors';
 export * from './breadcrumbs';
 export * from './dropdown-new';
+export * from './status';
+export * from './utils';
