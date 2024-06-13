@@ -4,5 +4,5 @@ export interface PageHeaderProps {
 	title?: string | React.ReactElement;
 	children?: React.ReactElement | React.ReactNode;
 	menuButtonColors?: keyof typeof ButtonColor;
-	actions?: Array<ButtonProps>;
+	actions?: Array<ButtonProps & { onClick?: () => void }>;
 }
