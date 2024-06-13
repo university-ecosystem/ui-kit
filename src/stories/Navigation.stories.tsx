@@ -75,7 +75,13 @@ export const Primary: Story = {
 						<PageLayout.Header
 							title="Text"
 							actions={[
-								{ children: 'Бам', variant: 'secondary', onClick: fn() },
+								{
+									children: 'Бам',
+									variant: 'secondary',
+									onClick: (event) => {
+										event.stopPropagation();
+									},
+								},
 							]}
 						/>
 						<PageLayout.Content>content</PageLayout.Content>

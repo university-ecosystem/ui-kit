@@ -35,6 +35,7 @@ export type ButtonProps = React.ComponentProps<'button'> & {
 	// 	(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
 	// 	(): void;
 	// };
-	onClick?(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
-	onClick?(): void;
+	onClick:
+		| ((event: React.MouseEvent<HTMLButtonElement>) => void)
+		| (() => void);
 };
