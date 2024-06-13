@@ -57,9 +57,14 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 						{...rest}
 					/>
 					{Boolean(rightIcon) && <>{rightIcon}</>}
-					{Boolean(inputValue && !disableClearIcon) && (
-						<RxCross1 style={{ cursor: 'pointer' }} onClick={onClear} />
-					)}
+
+					<RxCross1
+						style={{
+							cursor: 'pointer',
+							display: inputValue && !disableClearIcon ? 'block' : 'none',
+						}}
+						onClick={onClear}
+					/>
 				</StyledInputWrapper>
 				{Boolean(errorText) && (
 					<Typography variant="body1" color="error">
