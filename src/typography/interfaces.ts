@@ -21,6 +21,7 @@ export const TypographyColors = {
 export interface TypographyProps {
 	variant: keyof typeof TypographyVariants;
 	color?: keyof typeof TypographyColors;
+	textAlign?: string;
 	children: React.ReactNode;
 	bold?: boolean;
 }

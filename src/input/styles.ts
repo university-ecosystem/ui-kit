@@ -26,7 +26,6 @@ export const StyledInputWrapper = styled('div')<
 				return '230px';
 		}
 	}};
-	padding: 12px;
 
 	${(props) => {
 		if (props.variant === 'large') {
@@ -35,6 +34,8 @@ export const StyledInputWrapper = styled('div')<
 
 		return ``;
 	}}
+
+	padding-right: 12px;
 
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
 	border-radius: 14px;
@@ -65,7 +66,10 @@ export const StyledInput = styled('input')`
 	height: 100%;
 
 	border: none;
-	background-color: inherit;
+	background-color: none;
+	border-radius: 14px;
+
+	padding: 12px;
 
 	::placeholder {
 		color: ${(props) => props.theme.colors.grey[400]};
