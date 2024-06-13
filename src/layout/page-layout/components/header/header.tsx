@@ -11,6 +11,7 @@ import { Menu } from '../../../../menu';
 
 export const PageHeader: React.FC<PageHeaderProps> = ({
 	title,
+	menuButtonColors = 'primary',
 	children,
 	actions,
 }): React.ReactElement => {
@@ -39,6 +40,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 						<Menu options={menuActions ?? []}>
 							<Button
 								onlyIcon
+								color={menuButtonColors}
 								variant="text"
 								size="inherit"
 								icon={<BsThreeDotsVertical color="inherit" />}
