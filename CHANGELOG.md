@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.23](https://github.com/university-ecosystem/ui-kit/compare/v0.5.22...v0.5.23) (2024-06-13)
+
+
+### Features
+
+* added button color for menu mobile button ([56be27b](https://github.com/university-ecosystem/ui-kit/commit/56be27bab220ddfc2c1eff1317acbb711a75a8d2))
+
+
+### Bug Fixes
+
+* fix onClick function for page header menu ([e2e8ad3](https://github.com/university-ecosystem/ui-kit/commit/e2e8ad35d0e828ecb3f99f227028ccdf52d3b3b5))
+
 ### [0.5.22](https://github.com/university-ecosystem/ui-kit/compare/v0.5.21...v0.5.22) (2024-06-12)
 
 
