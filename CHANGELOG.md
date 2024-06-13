@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.24](https://github.com/university-ecosystem/ui-kit/compare/v0.5.23...v0.5.24) (2024-06-13)
+
+
+### Features
+
+* added textAlign for typography, input now 100% width and height ([8cdc076](https://github.com/university-ecosystem/ui-kit/commit/8cdc076f2c9d83414886e575451baf379f2a7ca9))
+
 ### [0.5.23](https://github.com/university-ecosystem/ui-kit/compare/v0.5.22...v0.5.23) (2024-06-13)
 
 
