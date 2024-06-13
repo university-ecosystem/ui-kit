@@ -31,4 +31,8 @@ export type ButtonProps = React.ComponentProps<'button'> & {
 	size?: keyof typeof ButtonSize;
 	isLoading?: boolean;
 	color?: keyof typeof ButtonColor;
+	onClick?: {
+		(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
+		(): void;
+	};
 };

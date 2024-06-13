@@ -21,7 +21,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 			actions?.map((action) => ({
 				title: action.children,
 				icon: action.icon,
-				onSelect: () => action.onClick,
+				onSelect: action.onClick,
 			})),
 		[]
 	);
