@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.25](https://github.com/university-ecosystem/ui-kit/compare/v0.5.24...v0.5.25) (2024-06-13)
+
+
+### Bug Fixes
+
+* input right icon fix ([09e7dd3](https://github.com/university-ecosystem/ui-kit/commit/09e7dd37a86b154f0eb8dc3b3f655c2fb4ca7401))
+
 ### [0.5.24](https://github.com/university-ecosystem/ui-kit/compare/v0.5.23...v0.5.24) (2024-06-13)
 
 
