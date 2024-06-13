@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.27](https://github.com/university-ecosystem/ui-kit/compare/v0.5.26...v0.5.27) (2024-06-13)
+
+
+### Bug Fixes
+
+* final fix of button onClick interface ([8c24e48](https://github.com/university-ecosystem/ui-kit/commit/8c24e48786fe20c862d768d7796e6392be2af977))
+* menu buttons fix ([d9d2930](https://github.com/university-ecosystem/ui-kit/commit/d9d2930d5c4ae28914eec90c472396ca45f2f6b8))
+
 ### [0.5.26](https://github.com/university-ecosystem/ui-kit/compare/v0.5.25...v0.5.26) (2024-06-13)
 
 
