@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.28](https://github.com/university-ecosystem/ui-kit/compare/v0.5.27...v0.5.28) (2024-06-19)
+
+
+### Features
+
+* accordion component ([8afaf4a](https://github.com/university-ecosystem/ui-kit/commit/8afaf4a032891aec5c9b99f57b4ef38a3b91f583))
+
 ### [0.5.27](https://github.com/university-ecosystem/ui-kit/compare/v0.5.26...v0.5.27) (2024-06-13)
 
 
