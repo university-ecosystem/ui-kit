@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledNavigationWrapper = styled('div')`
-	width: 100%;
+	//width: 100%;
 
 	height: fit-content;
 
@@ -21,13 +21,12 @@ export const StyledNavigationWrapper = styled('div')`
 
 	//border-radius: 12px;
 
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+	border-radius: 12px;
 
 	z-index: 10000;
 
 	gap: 24px;
-	margin: 0;
+	margin: 10px;
 
 	background-color: white;
 `;
