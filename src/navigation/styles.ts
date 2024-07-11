@@ -26,7 +26,7 @@ export const StyledNavigationWrapper = styled('div')`
 	z-index: 10000;
 
 	gap: 24px;
-	margin: 10px;
+	//margin: 10px;
 
 	background-color: white;
 `;
