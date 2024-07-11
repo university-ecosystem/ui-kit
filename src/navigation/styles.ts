@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledNavigationWrapper = styled('div')`
-	//width: 100%;
+	width: 100%;
 
 	height: fit-content;
 
@@ -20,6 +20,8 @@ export const StyledNavigationWrapper = styled('div')`
 	padding: 12px 12px;
 
 	//border-radius: 12px;
+
+	align-self: center;
 
 	border-radius: 12px;
 
