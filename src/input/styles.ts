@@ -9,7 +9,7 @@ export const StyledInputContainer = styled('div')`
 `;
 
 export const StyledInputWrapper = styled('div')<
-	Pick<InputProps, 'variant' | 'errorText'>
+	Pick<InputProps, 'variant' | 'errorText' | 'baseColor'>
 >`
 	width: ${(props) => {
 		switch (props.variant) {
@@ -26,7 +26,6 @@ export const StyledInputWrapper = styled('div')<
 				return '230px';
 		}
 	}};
-	padding: 12px;
 
 	${(props) => {
 		if (props.variant === 'large') {
@@ -36,9 +35,12 @@ export const StyledInputWrapper = styled('div')<
 		return ``;
 	}}
 
+	padding-right: 12px;
+
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
-	border-radius: 8px;
-	background-color: ${(props) => props.theme.colors.grey[100]};
+	border-radius: 14px;
+	background-color: ${(props) =>
+		props.baseColor === 'white' ? 'white' : props.theme.colors.grey[100]};
 
 	display: flex;
 	align-items: center;
@@ -64,7 +66,10 @@ export const StyledInput = styled('input')`
 	height: 100%;
 
 	border: none;
-	background-color: inherit;
+	background-color: none;
+	border-radius: 14px;
+
+	padding: 12px;
 
 	::placeholder {
 		color: ${(props) => props.theme.colors.grey[400]};

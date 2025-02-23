@@ -15,6 +15,9 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 			errorText,
 			rightIcon,
 			disableClearIcon = false,
+			baseColor = 'white',
+			name = 'input',
+			label = '',
 			onChange,
 			...rest
 		},
@@ -37,17 +40,31 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
 		return (
 			<StyledInputContainer>
-				<StyledInputWrapper variant={variant} errorText={errorText}>
+				<label htmlFor={name}>
+					<Typography variant="body2" bold>
+						{label}
+					</Typography>
+				</label>
+				<StyledInputWrapper
+					variant={variant}
+					errorText={errorText}
+					baseColor={baseColor}>
 					<StyledInput
 						ref={ref}
+						name={name}
 						value={inputValue}
 						onChange={onChangeHandler}
 						{...rest}
 					/>
 					{Boolean(rightIcon) && <>{rightIcon}</>}
-					{Boolean(inputValue && !disableClearIcon) && (
-						<RxCross1 style={{ cursor: 'pointer' }} onClick={onClear} />
-					)}
+
+					<RxCross1
+						style={{
+							cursor: 'pointer',
+							display: inputValue && !disableClearIcon ? 'block' : 'none',
+						}}
+						onClick={onClear}
+					/>
 				</StyledInputWrapper>
 				{Boolean(errorText) && (
 					<Typography variant="body1" color="error">

@@ -52,13 +52,18 @@ export const ecosystemTheme: Theme = {
 			600: '#3a3a40',
 			700: '#1b1b1f',
 		},
+		contrast: {
+			base: '#FFDA4F',
+			300: '#FFE47B',
+			700: '#A6891A',
+		},
 		error: {
 			base: '#eb5757',
 		},
 	},
 	breakPoints: {
-		mobile: '576px',
-		tablet: '768px',
+		mobile: '768px',
+		tablet: '890px',
 		laptop: '992px',
 		desktop: '1200px',
 	},

@@ -6,6 +6,7 @@ import { ColorMap } from './constants';
 export const Typography: React.FC<TypographyProps> = ({
 	variant,
 	color = 'base',
+	textAlign = 'start',
 	bold = false,
 	children,
 }): React.ReactElement => {
@@ -13,7 +14,11 @@ export const Typography: React.FC<TypographyProps> = ({
 	const textColor = ColorMap[color];
 
 	return (
-		<TypographyWrapper variant={variant} textColor={textColor} bold={bold}>
+		<TypographyWrapper
+			textAlign={textAlign}
+			variant={variant}
+			textColor={textColor}
+			bold={bold}>
 			<Component>{children}</Component>
 		</TypographyWrapper>
 	);

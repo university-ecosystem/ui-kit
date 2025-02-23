@@ -1,7 +1,11 @@
 import styled from '@emotion/styled';
-import { ButtonProps } from './interfaces';
+import { ButtonColorValues, ButtonProps } from './interfaces';
 
-export const ButtonWrapper = styled('button')<ButtonProps>`
+export const ButtonWrapper = styled('button')<
+	ButtonProps & {
+		buttonColor: ButtonColorValues;
+	}
+>`
 	border-radius: 12px;
 
 	padding: 12px;
@@ -13,7 +17,8 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 	display: flex;
 
 	justify-content: center;
-	gap: 4px;
+	align-items: center;
+	gap: 8px;
 
 	${(props) => {
 		if (props.size === 'default') {
@@ -38,16 +43,16 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 	${(props) => {
 		if (props.variant === 'filled')
 			return `
-				background-color: ${props.theme.colors.primary.base};
+				background-color: ${props.buttonColor.base};
 				color: white;
 
 				:hover {
-					background-color: ${props.theme.colors.secondary[300]};
+					background-color: ${props.buttonColor.hover};
 					transition: .2s;
 				}
 
 				:clicked {
-					background-color: ${props.theme.colors.primary[500]};
+					background-color: ${props.buttonColor.clicked};
 					border: 1px solid white;
 					transition: .2s;
 				}
@@ -56,17 +61,17 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 		if (props.variant === 'secondary')
 			return `
 				background-color: inherit;
-				border: 1px solid  ${props.theme.colors.primary.base};
-				color: ${props.theme.colors.primary.base};
+				border: 1px solid  ${props.buttonColor.base};
+				color: ${props.buttonColor.base};
 
 				:hover {
 					color: white;
-					background-color: ${props.theme.colors.secondary[300]};
+					background-color: ${props.buttonColor.hover};
 					transition: .2s;
 				}
 
 				:clicked {
-					background-color: ${props.theme.colors.primary[500]};
+					background-color: ${props.buttonColor.clicked};
 					border: 1px solid white;
 					color: white;
 					transition: .2s;
@@ -76,16 +81,16 @@ export const ButtonWrapper = styled('button')<ButtonProps>`
 		if (props.variant === 'text')
 			return `
 				background-color: inherit;
-				color: ${props.theme.colors.primary.base};
+				color: ${props.buttonColor.base};
 
 				:hover {
 					color: white;
-					background-color: ${props.theme.colors.secondary[300]};
+					background-color: ${props.buttonColor.hover}};
 					transition: .2s;
 				}
 
 				:clicked {
-					background-color: ${props.theme.colors.primary[500]};
+					background-color: ${props.buttonColor.clicked};
 					border: 1px solid white;
 					color: white;
 					transition: .2s;

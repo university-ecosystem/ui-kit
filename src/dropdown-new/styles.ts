@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const StyledSelectWrapper = styled('div')`
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
+
 	position: relative;
 
 	gap: 8px;
@@ -14,7 +14,7 @@ export const StyledSelectWrapper = styled('div')`
 `;
 
 export const StyledOptionsWrapper = styled('div')`
-	height: 100px;
+	height: 150px;
 	width: 100%;
 	margin-top: 10px;
 
@@ -37,4 +37,11 @@ export const StyledOptionsWrapper = styled('div')`
 	::-webkit-scrollbar {
 		display: none;
 	}
+`;
+
+export const StyledBadgeContaier = styled('div')`
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 6px;
 `;

@@ -11,6 +11,7 @@ import { Menu } from '../../../../menu';
 
 export const PageHeader: React.FC<PageHeaderProps> = ({
 	title,
+	menuButtonColors = 'primary',
 	children,
 	actions,
 }): React.ReactElement => {
@@ -21,7 +22,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 			actions?.map((action) => ({
 				title: action.children,
 				icon: action.icon,
-				onSelect: () => action.onClick,
+				onSelect: action.onClick,
 			})),
 		[]
 	);
@@ -35,19 +36,20 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 					<>{title}</>
 				)}
 				<PageHeaderActions>
-					{isMobile ? (
+					{isMobile && menuActions?.length ? (
 						<Menu options={menuActions ?? []}>
 							<Button
 								onlyIcon
+								color={menuButtonColors}
 								variant="text"
-								size="small"
+								size="inherit"
 								icon={<BsThreeDotsVertical color="inherit" />}
 							/>
 						</Menu>
 					) : (
 						<>
-							{actions?.map((action) => {
-								return <Button {...action} />;
+							{actions?.map((action, index) => {
+								return <Button key={index} {...action} />;
 							})}
 						</>
 					)}

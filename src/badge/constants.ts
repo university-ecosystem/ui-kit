@@ -11,4 +11,8 @@ export const BadgeColorMap: Record<keyof typeof BadgeColor, BadgeColorValues> =
 			base: ecosystemTheme.colors.primary.base,
 			hover: ecosystemTheme.colors.secondary[300],
 		},
+		contrast: {
+			base: ecosystemTheme.colors.contrast.base,
+			hover: ecosystemTheme.colors.contrast[300],
+		},
 	};

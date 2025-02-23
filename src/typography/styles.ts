@@ -10,6 +10,8 @@ export const TypographyWrapper = styled('div')<
 
 	color: ${(props) => props.textColor};
 
+	text-align: ${(props) => props.textAlign};
+
 	display: flex;
 	flex-wrap: wrap;
 

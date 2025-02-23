@@ -2,6 +2,245 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.31](https://github.com/university-ecosystem/ui-kit/compare/v0.5.30...v0.5.31) (2024-07-11)
+
+
+### Bug Fixes
+
+* style fixes ([f5ff7b4](https://github.com/university-ecosystem/ui-kit/commit/f5ff7b4c415eda4444bc200a1b3286713a37e824))
+
+### [0.5.30](https://github.com/university-ecosystem/ui-kit/compare/v0.5.29...v0.5.30) (2024-07-11)
+
+
+### Bug Fixes
+
+* revert margin update ([8b24dce](https://github.com/university-ecosystem/ui-kit/commit/8b24dceff068142650714844a6e6badac14f2df6))
+
+### [0.5.29](https://github.com/university-ecosystem/ui-kit/compare/v0.5.28...v0.5.29) (2024-07-11)
+
+
+### Bug Fixes
+
+* navigation style fix ([c6b3cca](https://github.com/university-ecosystem/ui-kit/commit/c6b3ccacc860b3fb274be6390a146b6d0cce8152))
+
+### [0.5.28](https://github.com/university-ecosystem/ui-kit/compare/v0.5.27...v0.5.28) (2024-06-19)
+
+
+### Features
+
+* accordion component ([8afaf4a](https://github.com/university-ecosystem/ui-kit/commit/8afaf4a032891aec5c9b99f57b4ef38a3b91f583))
+
+### [0.5.27](https://github.com/university-ecosystem/ui-kit/compare/v0.5.26...v0.5.27) (2024-06-13)
+
+
+### Bug Fixes
+
+* final fix of button onClick interface ([8c24e48](https://github.com/university-ecosystem/ui-kit/commit/8c24e48786fe20c862d768d7796e6392be2af977))
+* menu buttons fix ([d9d2930](https://github.com/university-ecosystem/ui-kit/commit/d9d2930d5c4ae28914eec90c472396ca45f2f6b8))
+
+### [0.5.26](https://github.com/university-ecosystem/ui-kit/compare/v0.5.25...v0.5.26) (2024-06-13)
+
+
+### Bug Fixes
+
+* button interface fix ([eb30b45](https://github.com/university-ecosystem/ui-kit/commit/eb30b451ce27900fbf20df9ef5768df621a943c8))
+
+### [0.5.25](https://github.com/university-ecosystem/ui-kit/compare/v0.5.24...v0.5.25) (2024-06-13)
+
+
+### Bug Fixes
+
+* input right icon fix ([09e7dd3](https://github.com/university-ecosystem/ui-kit/commit/09e7dd37a86b154f0eb8dc3b3f655c2fb4ca7401))
+
+### [0.5.24](https://github.com/university-ecosystem/ui-kit/compare/v0.5.23...v0.5.24) (2024-06-13)
+
+
+### Features
+
+* added textAlign for typography, input now 100% width and height ([8cdc076](https://github.com/university-ecosystem/ui-kit/commit/8cdc076f2c9d83414886e575451baf379f2a7ca9))
+
+### [0.5.23](https://github.com/university-ecosystem/ui-kit/compare/v0.5.22...v0.5.23) (2024-06-13)
+
+
+### Features
+
+* added button color for menu mobile button ([56be27b](https://github.com/university-ecosystem/ui-kit/commit/56be27bab220ddfc2c1eff1317acbb711a75a8d2))
+
+
+### Bug Fixes
+
+* fix onClick function for page header menu ([e2e8ad3](https://github.com/university-ecosystem/ui-kit/commit/e2e8ad35d0e828ecb3f99f227028ccdf52d3b3b5))
+
+### [0.5.22](https://github.com/university-ecosystem/ui-kit/compare/v0.5.21...v0.5.22) (2024-06-12)
+
+
+### Features
+
+* added options position prop for navigation ([7bf183c](https://github.com/university-ecosystem/ui-kit/commit/7bf183c52b97a36162e46bad802473007d7f48c7))
+
+### [0.5.21](https://github.com/university-ecosystem/ui-kit/compare/v0.5.20...v0.5.21) (2024-06-12)
+
+
+### Features
+
+* status component ([d3529d7](https://github.com/university-ecosystem/ui-kit/commit/d3529d7234adfad913dfe9d0b54258dd790828d3))
+
+### [0.5.20](https://github.com/university-ecosystem/ui-kit/compare/v0.5.19...v0.5.20) (2024-06-11)
+
+
+### Bug Fixes
+
+* button gap fix ([5728dca](https://github.com/university-ecosystem/ui-kit/commit/5728dcaf5ef249d0a5ed9c07242512b6976cb1d7))
+
+### [0.5.19](https://github.com/university-ecosystem/ui-kit/compare/v0.5.18...v0.5.19) (2024-06-11)
+
+
+### Bug Fixes
+
+* button align items center ([6acbee7](https://github.com/university-ecosystem/ui-kit/commit/6acbee782054a1069765995dd1e125539d65c279))
+
+### [0.5.18](https://github.com/university-ecosystem/ui-kit/compare/v0.5.17...v0.5.18) (2024-06-11)
+
+
+### Features
+
+* added onClick for Card component ([8fab40e](https://github.com/university-ecosystem/ui-kit/commit/8fab40e3803e3fddd6cc7c60fd82d91f8f0df511))
+
+### [0.5.17](https://github.com/university-ecosystem/ui-kit/compare/v0.5.16...v0.5.17) (2024-06-11)
+
+
+### Bug Fixes
+
+* background fix ([be0ddc9](https://github.com/university-ecosystem/ui-kit/commit/be0ddc9fb9769da3072edbefa6255c79f4215fd1))
+
+### [0.5.16](https://github.com/university-ecosystem/ui-kit/compare/v0.5.15...v0.5.16) (2024-06-10)
+
+
+### Bug Fixes
+
+* hoverable width and height ([298b113](https://github.com/university-ecosystem/ui-kit/commit/298b113c6364fe2e8b180e0d840aa17a2cfefadb))
+
+### [0.5.15](https://github.com/university-ecosystem/ui-kit/compare/v0.5.14...v0.5.15) (2024-06-08)
+
+
+### Bug Fixes
+
+* minor component fixes ([eba0e16](https://github.com/university-ecosystem/ui-kit/commit/eba0e1632917b114f3627d2f52f1739fca3cf1f5))
+
+### [0.5.14](https://github.com/university-ecosystem/ui-kit/compare/v0.5.13...v0.5.14) (2024-06-08)
+
+
+### Bug Fixes
+
+* breakpoints fix ([9f27479](https://github.com/university-ecosystem/ui-kit/commit/9f27479bdb94bf8267a03fb559c1fb063cd5e015))
+
+### [0.5.13](https://github.com/university-ecosystem/ui-kit/compare/v0.5.12...v0.5.13) (2024-06-02)
+
+### [0.5.12](https://github.com/university-ecosystem/ui-kit/compare/v0.5.11...v0.5.12) (2024-06-02)
+
+
+### Bug Fixes
+
+* card image height fix ([29b43fc](https://github.com/university-ecosystem/ui-kit/commit/29b43fc9a340d9de70e8401397e6de72e42b1a65))
+
+### [0.5.11](https://github.com/university-ecosystem/ui-kit/compare/v0.5.10...v0.5.11) (2024-06-02)
+
+
+### Bug Fixes
+
+* button color fix ([198449e](https://github.com/university-ecosystem/ui-kit/commit/198449eafd95bf24eeb497b55c7fd230591da05e))
+* peer deps ([5ca29f9](https://github.com/university-ecosystem/ui-kit/commit/5ca29f93e5cf2a5b540b29425255ea2a077ebdee))
+
+### [0.5.10](https://github.com/university-ecosystem/ui-kit/compare/v0.5.9...v0.5.10) (2024-05-31)
+
+
+### Features
+
+* contrast color for button and badge ([b757ed4](https://github.com/university-ecosystem/ui-kit/commit/b757ed4ea23a9fce663a3062a1e092c6c26762dd))
+
+### [0.5.9](https://github.com/university-ecosystem/ui-kit/compare/v0.5.8...v0.5.9) (2024-05-30)
+
+
+### Bug Fixes
+
+* minor styles and build fixes ([e2f09b2](https://github.com/university-ecosystem/ui-kit/commit/e2f09b2e282c7a3f3b7e574d8e167fa24ca6299d))
+
+### [0.5.8](https://github.com/university-ecosystem/ui-kit/compare/v0.5.7...v0.5.8) (2024-05-30)
+
+
+### Features
+
+* label for input ([af3c0bd](https://github.com/university-ecosystem/ui-kit/commit/af3c0bdb25f5bf13c60adf08545b3c7434f88d92))
+
+### [0.5.7](https://github.com/university-ecosystem/ui-kit/compare/v0.5.6...v0.5.7) (2024-05-29)
+
+
+### Features
+
+* added baseColor prop for input background ([7924ab6](https://github.com/university-ecosystem/ui-kit/commit/7924ab6aa39e956b5a956f10c67923929249256a))
+
+### [0.5.6](https://github.com/university-ecosystem/ui-kit/compare/v0.5.5...v0.5.6) (2024-05-29)
+
+
+### Features
+
+* button loading state ([26aeea1](https://github.com/university-ecosystem/ui-kit/commit/26aeea19db4f576d3ba70b2ea5d75dfc2c1a8859))
+
+
+### Bug Fixes
+
+* badge input deleted ([b44444e](https://github.com/university-ecosystem/ui-kit/commit/b44444e14330fffefa71aa738a47c2fb45224190))
+
+### [0.5.5](https://github.com/university-ecosystem/ui-kit/compare/v0.5.4...v0.5.5) (2024-05-29)
+
+
+### Features
+
+* new dropdown ([a5c09de](https://github.com/university-ecosystem/ui-kit/commit/a5c09decc3c2b5f116686b1a858f712dd660c57f))
+
+### [0.5.4](https://github.com/university-ecosystem/ui-kit/compare/v0.5.3...v0.5.4) (2024-05-29)
+
+
+### Bug Fixes
+
+* minor layout style fixes ([b280e08](https://github.com/university-ecosystem/ui-kit/commit/b280e08f50d7ef6c5cd5ba8a5d382b06578cd365))
+
+### [0.5.3](https://github.com/university-ecosystem/ui-kit/compare/v0.5.2...v0.5.3) (2024-05-28)
+
+
+### Bug Fixes
+
+* rollup config fix ([46df27a](https://github.com/university-ecosystem/ui-kit/commit/46df27a440ee1decf4e255a3ae73c99fd0752aa0))
+* style fixes ([d1a626c](https://github.com/university-ecosystem/ui-kit/commit/d1a626cad4e220282f3ed171d310232d4af5c698))
+
+### [0.5.2](https://github.com/university-ecosystem/ui-kit/compare/v0.5.1...v0.5.2) (2024-05-28)
+
+
+### Features
+
+* default layout and card ([ffea774](https://github.com/university-ecosystem/ui-kit/commit/ffea77405770cd86a9e54b6386d50a0007a68017))
+
+### [0.5.1](https://github.com/university-ecosystem/ui-kit/compare/v0.5.0...v0.5.1) (2024-05-27)
+
+
+### Features
+
+* breadcrumbs component ([eab0c8f](https://github.com/university-ecosystem/ui-kit/commit/eab0c8f86c27d44cb8b8afee37346b1970d040f2))
+
+## [0.5.0](https://github.com/university-ecosystem/ui-kit/compare/v0.4.13...v0.5.0) (2024-05-26)
+
+
+### Bug Fixes
+
+* actions button inherit size ([55c4940](https://github.com/university-ecosystem/ui-kit/commit/55c49401b3038c2444b473db41cab43064735281))
+
+### [0.4.14](https://github.com/university-ecosystem/ui-kit/compare/v0.4.13...v0.4.14) (2024-05-26)
+
+
+### Bug Fixes
+
+* actions button inherit size ([55c4940](https://github.com/university-ecosystem/ui-kit/commit/55c49401b3038c2444b473db41cab43064735281))
+
 ### [0.4.13](https://github.com/university-ecosystem/ui-kit/compare/v0.4.12...v0.4.13) (2024-05-26)
 
 

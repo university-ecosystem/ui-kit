@@ -4,9 +4,9 @@ export const StyledCardHeader = styled('div')`
 	width: 100%;
 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 
-	margin-bottom: 4px;
+	gap: 12px;
 `;
 
 export const StyledCardTextWrapper = styled('div')`
@@ -15,4 +15,17 @@ export const StyledCardTextWrapper = styled('div')`
 	gap: 4px;
 
 	flex-grow: 1;
+`;
+
+export const StyledCardImageWrapper = styled('div')`
+	width: 100%;
+
+	min-height: 40%;
+	height: 40%;
+
+	background-color: ${(props) => props.theme.colors.primary.base};
+
+	border-radius: 12px;
+
+	display: flex;
 `;

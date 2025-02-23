@@ -1,8 +1,8 @@
-import { ButtonProps } from '../../../../button';
+import { ButtonColor, ButtonProps } from '../../../../button';
 
 export interface PageHeaderProps {
 	title?: string | React.ReactElement;
 	children?: React.ReactElement | React.ReactNode;
-
-	actions?: Array<ButtonProps>;
+	menuButtonColors?: keyof typeof ButtonColor;
+	actions?: Array<ButtonProps & { onClick?: () => void }>;
 }

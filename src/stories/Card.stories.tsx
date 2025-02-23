@@ -29,18 +29,10 @@ export const Primary: Story = {
 	render: () => {
 		return (
 			<Card>
-				<Card.CardHeader title="card" />
+				<Card.CardHeader title="card" description={'text'} />
 				<Card.CardContent>Text</Card.CardContent>
 				<Card.CardFooter
-					actions={[
-						{ children: 'text' },
-						{ children: 'text' },
-						{ children: 'text' },
-						{ children: 'text' },
-						{ children: 'text' },
-						{ children: 'text' },
-						{ children: 'text' },
-					]}
+					actions={[{ children: 'text' }, { children: 'text' }]}
 				/>
 			</Card>
 		);

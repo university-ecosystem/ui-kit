@@ -13,11 +13,15 @@ export const StyledDropdownOption = styled('div')<{ selected: boolean }>`
 	${(props) => {
 		if (props.selected) {
 			return `
-                background-color: ${props.theme.colors.grey[100]};
+                background-color: rgba(202, 202, 205, 0.3);
                 font-weight: 600;
             `;
 		}
 	}}
+
+	:hover {
+		background-color: ${(props) => props.theme.colors.grey[100]};
+	}
 `;
 
 export const StyledDropdownOptionContent = styled('div')`
@@ -26,5 +30,5 @@ export const StyledDropdownOptionContent = styled('div')`
 	flex-direction: row;
 	align-items: center;
 	padding-bottom: 12px;
-	border-bottom: 0.5px solid ${(props) => props.theme.colors.grey[200]};
+	border-bottom: 0.5px solid rgba(202, 202, 205, 0.5);
 `;

@@ -11,12 +11,13 @@ export const Navigation: React.FC<NavigationProps> = ({
 	logo,
 	options,
 	onSelectOption,
+	optionsPosition = 'center',
 	footer,
 }): React.ReactElement => {
 	return (
 		<StyledNavigationWrapper>
 			<StyledLogoWrapper>{logo}</StyledLogoWrapper>
-			<StyledOptionsWrapper>
+			<StyledOptionsWrapper optionsPosition={optionsPosition}>
 				{options.map((option) => {
 					return <NavigationOption {...option} onSelect={onSelectOption} />;
 				})}

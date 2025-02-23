@@ -7,6 +7,7 @@ import { MenuOption } from './components';
 export const Menu: React.FC<MenuProps> = ({
 	children,
 	options,
+	fitContent,
 }): React.ReactElement => {
 	const [open, setOpen] = useState<boolean>(false);
 	return (
@@ -14,7 +15,7 @@ export const Menu: React.FC<MenuProps> = ({
 			onClickAway={() => {
 				setOpen(false);
 			}}>
-			<MenuWrapper>
+			<MenuWrapper fitContent={fitContent}>
 				<MenuChildrenWrapper
 					onClick={() => {
 						setOpen((prev) => !prev);
@@ -23,7 +24,9 @@ export const Menu: React.FC<MenuProps> = ({
 				</MenuChildrenWrapper>
 				{open && (
 					<MenuListWrapper>
-						{options?.map((option) => <MenuOption {...option} />)}
+						{options?.map((option, index) => (
+							<MenuOption key={`${option.title}${index}`} {...option} />
+						))}
 					</MenuListWrapper>
 				)}
 			</MenuWrapper>

@@ -8,6 +8,7 @@ declare module '@emotion/react' {
 			tertiary: Record<string | number, string>;
 			quaternary: Record<string | number, string>;
 			grey: Record<string | number, string>;
+			contrast: Record<string | number, string>;
 			error: Record<string | number, string>;
 		};
 		breakPoints: {

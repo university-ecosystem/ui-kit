@@ -21,13 +21,14 @@ export const StyledNavigationWrapper = styled('div')`
 
 	//border-radius: 12px;
 
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+	align-self: center;
+
+	border-radius: 12px;
 
 	z-index: 10000;
 
 	gap: 24px;
-	margin: 0;
+	//margin: 10px;
 
 	background-color: white;
 `;
@@ -42,13 +43,15 @@ export const StyledLogoWrapper = styled('div')`
 	}
 `;
 
-export const StyledOptionsWrapper = styled('div')`
+export const StyledOptionsWrapper = styled('div')<{ optionsPosition: string }>`
 	height: fit-content;
 	flex-grow: 1;
 
 	display: flex;
 
 	flex-direction: row;
+
+	justify-content: ${(props) => props.optionsPosition};
 
 	gap: 5px;
 `;

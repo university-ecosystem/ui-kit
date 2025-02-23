@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-export const MenuWrapper = styled('div')`
+export const MenuWrapper = styled('div')<{ fitContent?: boolean }>`
 	//background-color: ${(props) => props.theme.colors.grey['100']};
 
-	width: 100%;
+	width: ${(props) => (props.fitContent ? 'fit-content' : '100%')};
 
 	position: relative;
 	padding: 5px;
