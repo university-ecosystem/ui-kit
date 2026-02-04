@@ -12,3 +12,5 @@ export const LayoutFullWindow: React.FC<{
 		</StyledFullLayout>
 	);
 };
+
+export * from './styles';

@@ -12,3 +12,6 @@ export const PageLayout = Object.assign(PageLayoutComponent, {
 	Header,
 	Content,
 });
+
+export * from './styles';
+export * from './components';

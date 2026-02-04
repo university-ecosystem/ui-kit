@@ -57,3 +57,6 @@ export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 
 	return <>{children}</>;
 };
+
+export * from './interfaces';
+export * from './slots';
