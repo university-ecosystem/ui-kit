@@ -2,8 +2,8 @@ import React from 'react';
 import { useMedia } from 'use-media';
 import { NavigationOptionProps } from './interfaces';
 import { StyledNavOption } from './styles';
-import { Typography } from '../../../typography';
-import { ecosystemTheme } from '../../../theme-provider';
+import { Text } from '../../../text';
+import { ecosystemTheme } from '../../../theme-provider/constants';
 
 export const NavigationOption: React.FC<NavigationOptionProps> = React.memo(
 	({ icon, text, link, selected = false, onSelect }): React.ReactElement => {
@@ -13,9 +13,9 @@ export const NavigationOption: React.FC<NavigationOptionProps> = React.memo(
 			<StyledNavOption selected={selected} onClick={() => onSelect(link)}>
 				{icon}
 				{!isMobile && (
-					<Typography variant="body1" color="inherit" bold>
+					<Text variant="body1" color="inherit" bold>
 						{text}
-					</Typography>
+					</Text>
 				)}
 			</StyledNavOption>
 		);

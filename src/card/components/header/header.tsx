@@ -2,7 +2,7 @@ import React from 'react';
 import { CardHeaderProps } from './interfaces';
 import { StyledCardHeader, StyledCardTextWrapper } from './styles';
 import { CardHeaderSlot } from '../slots';
-import { Typography } from '../../../typography';
+import { Text } from '../../../text';
 
 export const CardHeader: React.FC<CardHeaderProps> = ({
 	title,
@@ -13,11 +13,11 @@ export const CardHeader: React.FC<CardHeaderProps> = ({
 		<CardHeaderSlot.Renderer childs={children}>
 			<StyledCardHeader>
 				<StyledCardTextWrapper>
-					<Typography variant="h3">{title}</Typography>
+					<Text variant="h3">{title}</Text>
 					{description && (
-						<Typography variant="body1" color="description">
+						<Text variant="body1" color="description">
 							{description}
-						</Typography>
+						</Text>
 					)}
 				</StyledCardTextWrapper>
 			</StyledCardHeader>

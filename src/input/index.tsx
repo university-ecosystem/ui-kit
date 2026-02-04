@@ -6,7 +6,7 @@ import {
 	StyledInputContainer,
 	StyledInputWrapper,
 } from './styles';
-import { Typography } from '../typography';
+import { Text } from '../text';
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 	(
@@ -41,9 +41,9 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 		return (
 			<StyledInputContainer>
 				<label htmlFor={name}>
-					<Typography variant="body2" bold>
+					<Text variant="body2" bold>
 						{label}
-					</Typography>
+					</Text>
 				</label>
 				<StyledInputWrapper
 					variant={variant}
@@ -67,9 +67,9 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 					/>
 				</StyledInputWrapper>
 				{Boolean(errorText) && (
-					<Typography variant="body1" color="error">
+					<Text variant="body1" color="error">
 						{errorText}
-					</Typography>
+					</Text>
 				)}
 			</StyledInputContainer>
 		);

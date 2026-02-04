@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import { TypographyProps } from './interfaces';
+import { TextProps } from './interfaces';
 
-export const TypographyWrapper = styled('div')<
-	TypographyProps & {
+export const TextWrapper = styled('div')<
+	TextProps & {
 		textColor: string;
 	}
 >`

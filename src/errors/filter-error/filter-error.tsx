@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFilter } from 'react-icons/fa';
 import { FilterErrorWrapper, FilterIconWrapper } from './styles';
-import { Typography } from '../../typography';
+import { Text } from '../../text';
 
 export const FilterError = () => {
 	return (
@@ -9,7 +9,7 @@ export const FilterError = () => {
 			<FilterIconWrapper>
 				<FaFilter color="white" />
 			</FilterIconWrapper>
-			<Typography variant="body1">Ничего не нашлось</Typography>
+			<Text variant="body1">Ничего не нашлось</Text>
 		</FilterErrorWrapper>
 	);
 };

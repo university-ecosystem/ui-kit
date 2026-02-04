@@ -1,4 +1,4 @@
-import { ButtonProps } from '../../../button';
+import { ButtonProps } from '../../../button/interfaces';
 
 export interface FooterProps {
 	actions: Array<ButtonProps>;

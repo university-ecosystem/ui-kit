@@ -1,5 +1,5 @@
 import { ButtonColor, ButtonColorValues } from './interfaces';
-import { ecosystemTheme } from '../theme-provider';
+import { ecosystemTheme } from '../theme-provider/constants';
 
 export const ButtonColorMap: Record<
 	keyof typeof ButtonColor,

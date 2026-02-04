@@ -1,5 +1,5 @@
 import { BadgeColor, BadgeColorValues } from './interfaces';
-import { ecosystemTheme } from '../theme-provider';
+import { ecosystemTheme } from '../theme-provider/constants';
 
 export const BadgeColorMap: Record<keyof typeof BadgeColor, BadgeColorValues> =
 	{

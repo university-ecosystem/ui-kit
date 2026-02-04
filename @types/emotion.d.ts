@@ -17,5 +17,9 @@ declare module '@emotion/react' {
 			laptop: string;
 			desktop: string;
 		};
+		br: {
+			base: string;
+			round: string;
+		};
 	}
 }

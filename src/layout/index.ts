@@ -1,3 +1,3 @@
-export * from './layout-full-window';
-export * from './page-layout';
-export * from './default-layout';
+export { LayoutFullWindow } from './layout-full-window';
+export { PageLayout } from './page-layout';
+export { DefaultLayout } from './default-layout';

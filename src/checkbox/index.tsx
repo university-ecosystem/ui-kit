@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckboxProps } from './interfaces';
 import { StyledCheckbox } from './styles';
-import { Typography } from '../typography';
+import { Text } from '../text';
 
 export const Checkbox: React.FC<CheckboxProps> = ({
 	title,
@@ -22,7 +22,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 				}}
 			/>
 			<label htmlFor={String(value)}>
-				<Typography variant="body1">{title}</Typography>
+				<Text variant="body1">{title}</Text>
 			</label>
 		</StyledCheckbox>
 	);

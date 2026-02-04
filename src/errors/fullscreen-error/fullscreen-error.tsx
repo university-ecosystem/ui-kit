@@ -2,7 +2,7 @@ import React from 'react';
 import { FullscreenErrorProps } from './interfaces';
 import { StyledScreenError } from './styles';
 import { ErrorHeaderSlot } from './slots';
-import { Typography } from '../../typography';
+import { Text } from '../../text';
 import { Button } from '../../button';
 
 export const FullscreenError: React.FC<FullscreenErrorProps> = ({
@@ -22,10 +22,10 @@ export const FullscreenError: React.FC<FullscreenErrorProps> = ({
 						<>{image}</>
 					))}
 			</ErrorHeaderSlot.Renderer>
-			<Typography variant="h3">{title}</Typography>
-			<Typography variant="body1" color="description">
+			<Text variant="h3">{title}</Text>
+			<Text variant="body1" color="description">
 				{description}
-			</Typography>
+			</Text>
 			{action && <Button {...action} />}
 		</StyledScreenError>
 	);

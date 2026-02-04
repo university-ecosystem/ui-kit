@@ -9,7 +9,7 @@ import {
 } from './slots';
 import { FullscreenError } from '../../errors';
 import { EmptyIllustration, ErrorIllustration } from '../../assets';
-import { ecosystemTheme } from '../../theme-provider';
+import { ecosystemTheme } from '../../theme-provider/constants';
 import { reloadPage } from '../../utils';
 
 export const DefaultLayout: React.FC<DefaultLayoutProps> = ({

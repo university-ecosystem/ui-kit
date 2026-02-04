@@ -1,27 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { MenuProps } from './interfaces';
 import { MenuChildrenWrapper, MenuListWrapper, MenuWrapper } from './styles';
 import { MenuOption } from './components';
+import { useToggle } from '../utils';
 
 export const Menu: React.FC<MenuProps> = ({
 	children,
 	options,
 	fitContent,
 }): React.ReactElement => {
-	const [open, setOpen] = useState<boolean>(false);
+	const { flag: open, toggleOff, toggle } = useToggle(false);
 	return (
-		<ClickAwayListener
-			onClickAway={() => {
-				setOpen(false);
-			}}>
+		<ClickAwayListener onClickAway={toggleOff}>
 			<MenuWrapper fitContent={fitContent}>
-				<MenuChildrenWrapper
-					onClick={() => {
-						setOpen((prev) => !prev);
-					}}>
-					{children}
-				</MenuChildrenWrapper>
+				<MenuChildrenWrapper onClick={toggle}>{children}</MenuChildrenWrapper>
 				{open && (
 					<MenuListWrapper>
 						{options?.map((option, index) => (

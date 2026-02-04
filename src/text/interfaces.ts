@@ -1,4 +1,4 @@
-export const TypographyVariants = {
+export const TextVariants = {
 	h1: 'h1',
 	h2: 'h2',
 	h3: 'h3',
@@ -9,7 +9,7 @@ export const TypographyVariants = {
 	body2: 'body2',
 };
 
-export const TypographyColors = {
+export const TextColors = {
 	error: 'error',
 	primary: 'primary',
 	secondary: 'secondary',
@@ -18,9 +18,9 @@ export const TypographyColors = {
 	inherit: 'inherit',
 };
 
-export interface TypographyProps {
-	variant: keyof typeof TypographyVariants;
-	color?: keyof typeof TypographyColors;
+export interface TextProps {
+	variant: keyof typeof TextVariants;
+	color?: keyof typeof TextColors;
 	textAlign?: string;
 	children: React.ReactNode;
 	bold?: boolean;

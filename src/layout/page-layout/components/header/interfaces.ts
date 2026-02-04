@@ -1,4 +1,4 @@
-import { ButtonColor, ButtonProps } from '../../../../button';
+import { ButtonColor, ButtonProps } from '../../../../button/interfaces';
 
 export interface PageHeaderProps {
 	title?: string | React.ReactElement;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DropdownOptionProps } from './interfaces';
 import { StyledDropdownOption, StyledDropdownOptionContent } from './styles';
-import { Typography } from '../../../typography';
+import { Text } from '../../../text';
 
 export const DropdownOption: React.FC<DropdownOptionProps> = ({
 	id,
@@ -17,9 +17,9 @@ export const DropdownOption: React.FC<DropdownOptionProps> = ({
 				onSelect({ id, title, value }, !selected);
 			}}>
 			<StyledDropdownOptionContent>
-				<Typography variant="body1" bold>
+				<Text variant="body1" bold>
 					{title}
-				</Typography>
+				</Text>
 			</StyledDropdownOptionContent>
 		</StyledDropdownOption>
 	);

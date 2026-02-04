@@ -3,7 +3,7 @@ import { PulseLoader } from 'react-spinners';
 import { ButtonWrapper } from './styles';
 import { ButtonProps } from './interfaces';
 import { ButtonColorMap } from './constants';
-import { ecosystemTheme } from '../theme-provider';
+import { ecosystemTheme } from '../theme-provider/constants';
 
 export const Button: React.FC<ButtonProps> = ({
 	children,

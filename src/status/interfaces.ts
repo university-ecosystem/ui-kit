@@ -1,4 +1,4 @@
-import { ecosystemTheme } from '../theme-provider';
+import { ecosystemTheme } from '../theme-provider/constants';
 
 export const StatusColor = {
 	succsess: 'green',

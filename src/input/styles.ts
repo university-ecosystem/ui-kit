@@ -4,7 +4,6 @@ import { InputProps } from './interfaces';
 export const StyledInputContainer = styled('div')`
 	display: flex;
 	flex-direction: column;
-	//width: fit-content;
 	gap: 8px;
 `;
 
@@ -38,7 +37,7 @@ export const StyledInputWrapper = styled('div')<
 	padding-right: 12px;
 
 	border: 2px solid ${(props) => props.theme.colors.grey[600]};
-	border-radius: 14px;
+	border-radius: 8px;
 	background-color: ${(props) =>
 		props.baseColor === 'white' ? 'white' : props.theme.colors.grey[100]};
 

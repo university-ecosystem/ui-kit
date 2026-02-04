@@ -12,7 +12,6 @@ export const StyledCheckbox = styled('div')`
 		-webkit-appearance: none;
 		appearance: none;
 
-		/* creating a custom design */
 		margin: 0 !important;
 		width: 1.6em;
 		height: 1.6em;

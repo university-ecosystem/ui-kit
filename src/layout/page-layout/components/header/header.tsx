@@ -4,9 +4,9 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 import { PageHeaderProps } from './interfaces';
 import { PageHeaderActions, PageHeaderWrapper } from './styles';
 import { PageHeaderSlot } from '../slots';
-import { Typography } from '../../../../typography';
+import { Text } from '../../../../text';
 import { Button } from '../../../../button';
-import { ecosystemTheme } from '../../../../theme-provider';
+import { ecosystemTheme } from '../../../../theme-provider/constants';
 import { Menu } from '../../../../menu';
 
 export const PageHeader: React.FC<PageHeaderProps> = ({
@@ -31,7 +31,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 		<PageHeaderSlot.Renderer childs={children}>
 			<PageHeaderWrapper>
 				{typeof title === 'string' ? (
-					<Typography variant="h3">{title}</Typography>
+					<Text variant="h3">{title}</Text>
 				) : (
 					<>{title}</>
 				)}

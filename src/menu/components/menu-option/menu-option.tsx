@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuOptionWrapper } from './styles';
 import { MenuOptionProps } from '../../interfaces';
-import { Typography } from '../../../typography';
+import { Text } from '../../../text';
 
 export const MenuOption: React.FC<MenuOptionProps> = ({
 	title,
@@ -13,10 +13,10 @@ export const MenuOption: React.FC<MenuOptionProps> = ({
 		<MenuOptionWrapper onClick={onSelect}>
 			{Boolean(icon) && <>{icon}</>}
 			<div>
-				<Typography variant="body1">{title}</Typography>
-				<Typography variant="body2" color="description">
+				<Text variant="body1">{title}</Text>
+				<Text variant="body2" color="description">
 					{description}
-				</Typography>
+				</Text>
 			</div>
 		</MenuOptionWrapper>
 	);

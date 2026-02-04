@@ -4,7 +4,7 @@ import { fn } from '@storybook/test';
 import { BiHome } from 'react-icons/bi';
 import { Navigation } from '../navigation';
 import { LayoutFullWindow, PageLayout } from '../layout';
-import { Typography } from '../typography';
+import { Text } from '../text';
 import { Menu } from '../menu';
 import { Avatar } from '../avatar';
 
@@ -34,7 +34,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
 	args: {
 		onSelectOption: fn(),
-		logo: <Typography variant="h3">Logo</Typography>,
+		logo: <Text variant="h3">Logo</Text>,
 		options: [
 			{ text: 'Home', link: '/home', selected: true, icon: <BiHome /> },
 			{ text: 'Home', link: '/home', selected: false, icon: <BiHome /> },
@@ -64,9 +64,9 @@ export const Primary: Story = {
 										placeholder="avatar"
 									/>
 
-									<Typography variant="body1" bold>
+									<Text variant="body1" bold>
 										Максим Дмитриев
-									</Typography>
+									</Text>
 								</div>
 							</Menu>
 						}

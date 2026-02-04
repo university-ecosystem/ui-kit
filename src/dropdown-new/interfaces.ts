@@ -1,5 +1,5 @@
 import { Option } from './components';
-import { InputProps } from '../input';
+import { InputProps } from '../input/interfaces';
 
 export type OmitedInput = Omit<InputProps, 'value'>;
 

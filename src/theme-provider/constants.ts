@@ -67,4 +67,8 @@ export const ecosystemTheme: Theme = {
 		laptop: '992px',
 		desktop: '1200px',
 	},
+	br: {
+		base: '8px',
+		round: '16px',
+	},
 };

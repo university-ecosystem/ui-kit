@@ -6,7 +6,7 @@ export const ButtonWrapper = styled('button')<
 		buttonColor: ButtonColorValues;
 	}
 >`
-	border-radius: 12px;
+	border-radius: 8px;
 
 	padding: 12px;
 	height: fit-content;

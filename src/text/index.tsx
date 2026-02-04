@@ -1,10 +1,10 @@
 import React from 'react';
-import { TypographyProps } from './interfaces';
-import { TypographyWrapper } from './styles';
+import { TextProps } from './interfaces';
+import { TextWrapper } from './styles';
 import { ColorMap } from './constants';
 
-export const Typography: React.FC<TypographyProps> = ({
-	variant,
+export const Text: React.FC<TextProps> = ({
+	variant = 'body1',
 	color = 'base',
 	textAlign = 'start',
 	bold = false,
@@ -14,12 +14,12 @@ export const Typography: React.FC<TypographyProps> = ({
 	const textColor = ColorMap[color];
 
 	return (
-		<TypographyWrapper
+		<TextWrapper
 			textAlign={textAlign}
 			variant={variant}
 			textColor={textColor}
 			bold={bold}>
 			<Component>{children}</Component>
-		</TypographyWrapper>
+		</TextWrapper>
 	);
 };

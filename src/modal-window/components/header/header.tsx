@@ -2,7 +2,7 @@ import React from 'react';
 import { RxCross1 } from 'react-icons/rx';
 import { HeaderProps } from './interfaces';
 import { StyledModalHeader, StyledModalTextWrapper } from './styles';
-import { Typography } from '../../../typography';
+import { Text } from '../../../text';
 import { HeaderSlot } from '../slots';
 import { Button } from '../../../button';
 
@@ -16,10 +16,10 @@ export const Header: React.FC<HeaderProps> = ({
 		<HeaderSlot.Renderer childs={children}>
 			<StyledModalHeader>
 				<StyledModalTextWrapper>
-					<Typography variant="h3">{title}</Typography>
-					<Typography variant="body1" color="description">
+					<Text variant="h3">{title}</Text>
+					<Text variant="body1" color="description">
 						{description}
-					</Typography>
+					</Text>
 				</StyledModalTextWrapper>
 				<Button
 					onlyIcon
