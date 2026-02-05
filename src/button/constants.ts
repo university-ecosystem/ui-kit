@@ -1,23 +1,22 @@
+import type { Theme } from '@emotion/react';
 import { ButtonColor, ButtonColorValues } from './interfaces';
-import { ecosystemTheme } from '../theme-provider/constants';
 
-export const ButtonColorMap: Record<
-	keyof typeof ButtonColor,
-	ButtonColorValues
-> = {
+export const ButtonColorMap = (
+	theme: Theme
+): Record<keyof typeof ButtonColor, ButtonColorValues> => ({
 	grey: {
-		base: ecosystemTheme.colors.grey.base,
-		hover: ecosystemTheme.colors.grey[300],
-		clicked: ecosystemTheme.colors.grey[700],
+		base: theme.colors.grey.base,
+		hover: theme.colors.grey[300],
+		clicked: theme.colors.grey[700],
 	},
 	primary: {
-		base: ecosystemTheme.colors.primary.base,
-		hover: ecosystemTheme.colors.secondary[300],
-		clicked: ecosystemTheme.colors.secondary[700],
+		base: theme.colors.primary.base,
+		hover: theme.colors.secondary[300],
+		clicked: theme.colors.secondary[700],
 	},
 	contrast: {
-		base: ecosystemTheme.colors.contrast.base,
-		hover: ecosystemTheme.colors.contrast[300],
-		clicked: ecosystemTheme.colors.contrast[700],
+		base: theme.colors.contrast.base,
+		hover: theme.colors.contrast[300],
+		clicked: theme.colors.contrast[700],
 	},
-};
+});

@@ -1,14 +1,21 @@
-import { ecosystemTheme } from '../theme-provider/constants';
+import { Theme } from '@emotion/react';
 
-export const StatusColor = {
+export type StatusColorValues =
+	| 'succsess'
+	| 'error'
+	| 'info'
+	| 'warning'
+	| 'default';
+
+export const StatusColor = (theme: Theme) => ({
 	succsess: 'green',
-	error: ecosystemTheme.colors.error['base'],
-	info: ecosystemTheme.colors.primary['400'],
+	error: theme.colors.error['base'],
+	info: theme.colors.primary['400'],
 	warning: 'orange',
-	default: ecosystemTheme.colors.grey['400'],
-};
+	default: theme.colors.grey['400'],
+});
 
 export interface StatusProps {
-	status: keyof typeof StatusColor;
+	status: StatusColorValues;
 	children?: React.ReactElement | React.ReactNode;
 }

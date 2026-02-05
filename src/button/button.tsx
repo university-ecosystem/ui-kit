@@ -1,5 +1,6 @@
 import React from 'react';
 import { PulseLoader } from 'react-spinners';
+import { useTheme } from '@emotion/react';
 import { ButtonWrapper } from './styles';
 import { ButtonProps } from './interfaces';
 import { ButtonColorMap } from './constants';
@@ -16,9 +17,11 @@ export const Button: React.FC<ButtonProps> = ({
 	onClick,
 	...rest
 }) => {
+	const theme = useTheme();
+
 	return (
 		<ButtonWrapper
-			buttonColor={ButtonColorMap[color]}
+			buttonColor={ButtonColorMap(theme)[color]}
 			variant={variant}
 			onClick={onClick}
 			size={size}
