@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.3](https://github.com/university-ecosystem/ui-kit/compare/v0.6.2...v0.6.3) (2026-02-05)
+
+
+### Bug Fixes
+
+* **theme:** fix theme colors ([dd6673b](https://github.com/university-ecosystem/ui-kit/commit/dd6673b7937d44c7385f61dd33877c51f873de9e))
+
 ### [0.6.2](https://github.com/university-ecosystem/ui-kit/compare/v0.6.1...v0.6.2) (2026-02-04)
 
 
