@@ -1,39 +1,53 @@
 import styled from '@emotion/styled';
 
-export const TableWrapperStyled = styled.div`
+export const TableWrapperStyled = styled.table`
 	overflow-x: auto;
-	overflow-y: hidden;
 
-	display: flex;
-	flex-direction: column;
-
-	border: 1px solid ${({ theme }) => theme.colors.grey['100']};
+	border-collapse: separate;
+	border-spacing: 0;
 
 	border-radius: 8px;
 
-	& > * {
-		flex-grow: 1;
+	& > thead > tr:first-child > th:first-child {
+		border-top-left-radius: 8px;
+	}
+
+	& > thead > tr:last-child > th:last-child {
+		border-top-right-radius: 8px;
+	}
+
+	& > tbody > tr:last-child > th:first-child {
+		border-bottom-left-radius: 8px;
+	}
+
+	& > tbody > tr:last-child > th:last-child {
+		border-bottom-right-radius: 8px;
 	}
 `;
 
-export const TableHeaderWrapperStyled = styled.div`
-	display: flex;
+export const TableHeaderWrapperStyled = styled.thead``;
 
-	flex-direction: row;
+export const TableCellStyled = styled.th<{ isHeader?: boolean }>`
+	padding: 24px;
+
+	${({ isHeader, theme }) =>
+		isHeader
+			? `
+			background-color: ${theme.colors.grey['100']};
+			border: 1px solid ${theme.colors.grey['200']};
+		
+	`
+			: `
+			border: 1px solid ${theme.colors.grey['100']};
+			cursor: pointer;
+			:hover {
+				background-color: ${theme.colors.primary['100']};
+			}
+	`}
 `;
 
-export const TableCellStyled = styled.div`
-	flex-grow: 1;
-	padding: 12px 8px;
-
-	border: 1px solid ${({ theme }) => theme.colors.grey['100']};
-`;
-
-export const TableRowStyled = styled.div`
-	display: flex;
-	flex-direction: row;
-
-	width: fit-content;
+export const TableRowStyled = styled.tr`
+	border: 1px solid ${({ theme }) => theme.colors.grey['200']};
 `;
 
 export const TableColumnStyled = styled.div`

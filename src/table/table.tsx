@@ -1,8 +1,7 @@
-import React, { useCallback, useMemo } from 'react';
-import { TableColumn, TableProps } from './interfaces';
+import React, { useMemo } from 'react';
+import { TableProps } from './interfaces';
 import {
 	TableCellStyled,
-	TableContentStyled,
 	TableHeaderWrapperStyled,
 	TableRowStyled,
 	TableWrapperStyled,
@@ -16,32 +15,18 @@ export const Table = <T extends object>(props: TableProps<T>) => {
 		[columns]
 	);
 
-	const renderTable = useCallback(() => {
-		const columnsData: Array<
-			TableColumn<T> & {
-				rows: Array<React.ReactElement>;
-			}
-		> = [];
-
-		columns.forEach((col) => {
-			columnsData.push({
-				...col,
-				rows: data.map((item) => col.render(item[col.accessor])),
-			});
-		});
-
-		return columnsData;
-	}, [columns]);
-
 	return (
 		<TableWrapperStyled>
 			<TableHeaderWrapperStyled>
-				{columnTitle.map((item) => (
-					<TableCellStyled>{item}</TableCellStyled>
-				))}
+				<TableRowStyled>
+					{columnTitle.map((item) => (
+						<TableCellStyled isHeader>{item}</TableCellStyled>
+					))}
+				</TableRowStyled>
 			</TableHeaderWrapperStyled>
-			{data.map((item) => (
-				<TableContentStyled>
+
+			<tbody>
+				{data.map((item) => (
 					<TableRowStyled>
 						{columns.map((col) => (
 							<TableCellStyled
@@ -50,8 +35,8 @@ export const Table = <T extends object>(props: TableProps<T>) => {
 							</TableCellStyled>
 						))}
 					</TableRowStyled>
-				</TableContentStyled>
-			))}
+				))}
+			</tbody>
 		</TableWrapperStyled>
 	);
 };

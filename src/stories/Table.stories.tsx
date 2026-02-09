@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Table, TableProps } from '../table';
+import { Table } from '../table';
 
 const meta = {
 	title: 'Components/Table',
@@ -27,14 +27,17 @@ const data = [
 	{
 		name: 'Иван',
 		age: '20 лет',
+		department: 'ОФИС',
 	},
 	{
 		name: 'Пётр',
 		age: '23 года',
+		department: 'ОФИС',
 	},
 	{
 		name: 'Михаил',
 		age: '19 лет',
+		department: 'ОФИС',
 	},
 ];
 
@@ -46,6 +49,11 @@ export const Primary: Story = {
 				columns={[
 					{ title: 'Имя', accessor: 'name', render: (row) => <>{row}</> },
 					{ title: 'Возраст', accessor: 'age', render: (row) => <>{row}</> },
+					{
+						title: 'Департамент',
+						accessor: 'department',
+						render: (row) => <>{row}</>,
+					},
 				]}
 			/>
 		);
