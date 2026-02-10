@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/university-ecosystem/ui-kit/compare/v0.6.4...v0.6.5) (2026-02-10)
+
+
+### Features
+
+* **table:** table component ([8ad7551](https://github.com/university-ecosystem/ui-kit/commit/8ad7551d107347ede3acb7548dd4fa0c521eeaa0))
+
 ### [0.6.4](https://github.com/university-ecosystem/ui-kit/compare/v0.6.3...v0.6.4) (2026-02-10)
 
 ### [0.6.3](https://github.com/university-ecosystem/ui-kit/compare/v0.6.2...v0.6.3) (2026-02-05)
