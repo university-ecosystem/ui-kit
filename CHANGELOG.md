@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/university-ecosystem/ui-kit/compare/v0.6.4...v0.6.5) (2026-02-10)
+
+
+### Features
+
+* **table:** table component ([8ad7551](https://github.com/university-ecosystem/ui-kit/commit/8ad7551d107347ede3acb7548dd4fa0c521eeaa0))
+
+### [0.6.4](https://github.com/university-ecosystem/ui-kit/compare/v0.6.3...v0.6.4) (2026-02-10)
+
+### [0.6.3](https://github.com/university-ecosystem/ui-kit/compare/v0.6.2...v0.6.3) (2026-02-05)
+
+
+### Bug Fixes
+
+* **theme:** fix theme colors ([dd6673b](https://github.com/university-ecosystem/ui-kit/commit/dd6673b7937d44c7385f61dd33877c51f873de9e))
+
+### [0.6.2](https://github.com/university-ecosystem/ui-kit/compare/v0.6.1...v0.6.2) (2026-02-04)
+
+
+### Bug Fixes
+
+* **dropdown:** fix export of DropdownOption types ([83b0905](https://github.com/university-ecosystem/ui-kit/commit/83b09053480f68cef9082e247594b61177f26ded))
+
+### [0.6.1](https://github.com/university-ecosystem/ui-kit/compare/v0.6.0...v0.6.1) (2026-02-04)
+
+## [0.6.0](https://github.com/university-ecosystem/ui-kit/compare/v0.5.31...v0.6.0) (2026-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ui-kit:** Types and constants now should be imported directly from interfaces.ts and style.ts
+files
+
+* **ui-kit:** removed all reexports ([c978d5b](https://github.com/university-ecosystem/ui-kit/commit/c978d5bdf3d0c5317f44b17f82739546499b0e7d))
+
 ### [0.5.31](https://github.com/university-ecosystem/ui-kit/compare/v0.5.30...v0.5.31) (2024-07-11)
 
 

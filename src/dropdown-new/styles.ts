@@ -13,7 +13,7 @@ export const StyledSelectWrapper = styled('div')`
 	}
 `;
 
-export const StyledOptionsWrapper = styled('div')`
+export const StyledDropdownOptionsWrapper = styled('div')`
 	height: 150px;
 	width: 100%;
 	margin-top: 10px;

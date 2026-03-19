@@ -17,3 +17,4 @@ export * from './breadcrumbs';
 export * from './dropdown-new';
 export * from './status';
 export * from './utils';
+export * from './table';
