@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.7](https://github.com/university-ecosystem/ui-kit/compare/v0.6.6...v0.6.7) (2026-03-19)
+
+
+### Bug Fixes
+
+* **eslint:** added eslintinore file ([cf9307b](https://github.com/university-ecosystem/ui-kit/commit/cf9307bad27195e1b5bfb41985d677fa1e17ba4a))
+
 ### [0.6.6](https://github.com/university-ecosystem/ui-kit/compare/v0.6.5...v0.6.6) (2026-03-19)
 
 
