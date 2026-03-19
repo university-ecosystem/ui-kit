@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.8](https://github.com/university-ecosystem/ui-kit/compare/v0.6.7...v0.6.8) (2026-03-19)
+
+
+### Bug Fixes
+
+* tabs reexport fix ([15b7a88](https://github.com/university-ecosystem/ui-kit/commit/15b7a88d4067ccc73f0e0c3cae04983dfba31b1a))
+
 ### [0.6.7](https://github.com/university-ecosystem/ui-kit/compare/v0.6.6...v0.6.7) (2026-03-19)
 
 
