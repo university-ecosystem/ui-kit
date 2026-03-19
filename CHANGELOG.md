@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.6](https://github.com/university-ecosystem/ui-kit/compare/v0.6.5...v0.6.6) (2026-03-19)
+
+
+### Features
+
+* tab component ([7fdc203](https://github.com/university-ecosystem/ui-kit/commit/7fdc203613c7d305f2b1bc6f62bd9b98a4c81075))
+
 ### [0.6.5](https://github.com/university-ecosystem/ui-kit/compare/v0.6.4...v0.6.5) (2026-02-10)
 
 
