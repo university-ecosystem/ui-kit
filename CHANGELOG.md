@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.9](https://github.com/university-ecosystem/ui-kit/compare/v0.6.8...v0.6.9) (2026-04-09)
+
+
+### Bug Fixes
+
+* **base-modal.styles:** height prop removed ([93c831e](https://github.com/university-ecosystem/ui-kit/commit/93c831e2885e5f728081642f1306db3d3f0fce6a))
+
 ### [0.6.8](https://github.com/university-ecosystem/ui-kit/compare/v0.6.7...v0.6.8) (2026-03-19)
 
 
