@@ -29,7 +29,6 @@ export const BaseModalBackdrop = styled('div')`
 
 export const BaseModalWrapper = styled('div')`
 	width: 500px;
-	height: 400px;
 
 	background-color: white;
 
