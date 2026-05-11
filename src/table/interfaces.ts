@@ -2,6 +2,7 @@ export interface TableColumn<T extends object> {
 	title: string;
 	accessor: keyof T;
 	render: (row: T[keyof T]) => React.ReactElement;
+	span?: number;
 }
 
 export interface TableProps<T extends object> {

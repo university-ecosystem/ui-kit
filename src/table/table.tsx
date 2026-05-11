@@ -30,6 +30,7 @@ export const Table = <T extends object>(props: TableProps<T>) => {
 					<TableRowStyled>
 						{columns.map((col) => (
 							<TableCellStyled
+								colSpan={col.span}
 								onClick={() => (onRowClick ? onRowClick(item) : void 0)}>
 								{col.render(item[col.accessor])}
 							</TableCellStyled>
