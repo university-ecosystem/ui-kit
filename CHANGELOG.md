@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.10](https://github.com/university-ecosystem/ui-kit/compare/v0.6.9...v0.6.10) (2026-05-11)
+
+
+### Features
+
+* added colSpan for Table component ([f9f35e9](https://github.com/university-ecosystem/ui-kit/commit/f9f35e9b0f0dcd45d8f779f28675d4888039fe08))
+
 ### [0.6.9](https://github.com/university-ecosystem/ui-kit/compare/v0.6.8...v0.6.9) (2026-04-09)
 
 
